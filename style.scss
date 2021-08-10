@@ -5,3 +5,100 @@
     box-sizing: border-box;
     font-size: 18px
 }
+
+.container {
+    width: 100%;
+    overflow-x: hidden;
+
+    #header {
+        background-image: url(/images/desktop/image-header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 90%;
+        background-position-x: center;
+        height: 100vh;
+// navbar
+        #navbar {
+            @media(min-width: 768px){
+                #mobile-nav {
+                    display: none;
+                }
+            }
+            @media(max-width: 768px){
+                #desktop-nav {
+                    display: none;
+                }
+            }
+            // background-color: blue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2em;
+            height: 10vh;
+
+            #desktop-nav {
+                // background-color: navy;
+                width: auto;
+                padding: 0 2em;
+                .desktop-links {
+                    display: flex;
+
+                    li {
+                        padding: 0 1em;
+                        list-style: none;
+                        font-family: $font-barlow;;
+
+                        a {
+                            color: $White;
+                            text-decoration: none;
+                            text-transform: capitalize;
+                            padding: .4em .7em;
+                            border-radius: 20px;
+                            transition: .2s;
+                            position: relative;
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                transition: .2s;
+                                opacity: 0;
+                                border-radius: 20px;
+                                box-shadow: inset 3px 3px 4px #ddda,
+                                            inset -3px -3px 4px #000a;
+                            }
+                            &:hover {
+                                background-color: $White;
+                                color: $Dark-grayish-blue;
+                                &::after{
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+// end of 
+        #hero {
+            text-align: center;
+            text-transform: uppercase;
+            h1 {
+                color: $White;
+                font-size: 2em;
+                font-family: $font-fraunces;
+                margin-top: 10vh;
+                letter-spacing: .2em;
+            }
+            .arrow {
+                transform: translateY(65%);
+            }
+        }
+
+    }
+}
+
+

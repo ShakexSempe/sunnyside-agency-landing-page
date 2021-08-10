@@ -16,23 +16,22 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="header">
+      <!-- navbar -->
+      <nav id="navbar">
+      <!-- logo -->
+      <div class="logo">
+        <img src="/images/logo.svg" alt="logo">
+      </div>
+      <!-- end of logo -->
       <!-- desktop nav links -->
       <nav id="desktop-nav">
-        <!-- logo -->
-        <div class="logo">
-          <img src="/images/logo.svg" alt="logo">
-        </div>
-        <!-- end of logo -->
-
-        <div class="desktop-links">
-          <ul>
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Contact</li>
+          <ul class="desktop-links">
+            <li><a href="#about" data-link="about">About</a></li>
+            <li><a href="#about">services</a></li>
+            <li><a href="#about">projects</a></li>
+            <li><a href="#about">contact</a></li>
           </ul>
-        </div>
       </nav>
       <!-- end of desktop nav links -->
       <!-- mobile nav-links -->
@@ -50,9 +49,9 @@
         </div>
       </nav>
       <!-- end of mobile nav-links -->
-    </header>
-
-    <main>
+    </nav>
+      <!-- end of navbar -->
+      
       <!-- hero -->
       <section id="hero">
         <h1>We Are Creatives <!-- header background--> </h1>
@@ -61,7 +60,9 @@
         </div>
       </section>
       <!-- end of hero -->
-      <!-- about section-->
+    </header>
+    <!-- about section-->
+    <main>
       <section id="about">
         <div class="about-info">
           <div class="info-brand">
