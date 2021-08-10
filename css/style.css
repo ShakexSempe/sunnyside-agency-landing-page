@@ -14,7 +14,6 @@
     background-repeat: no-repeat;
     background-position-y: 90%;
     background-position-x: center;
-    background-attachment: fixed;
     height: 100vh; }
     @media (max-width: 768px) {
       .container #header {
@@ -107,3 +106,146 @@
         letter-spacing: .2em; }
       .container #header #hero .arrow {
         transform: translateY(65%); }
+  .container #about {
+    width: 100%; }
+    @media (max-width: 768px) {
+      .container #about .about-info .about-brand {
+        flex-direction: column-reverse;
+        text-align: center; }
+        .container #about .about-info .about-brand .card .card-details {
+          text-align: center; } }
+    .container #about .about-info .about-brand {
+      display: flex; }
+      @media (min-width: 768px) {
+        .container #about .about-info .about-brand:nth-child(even) {
+          flex-direction: row-reverse; } }
+      .container #about .about-info .about-brand .card {
+        padding: 6em;
+        flex-basis: 50%;
+        text-align: left; }
+        @media (max-width: 768px) {
+          .container #about .about-info .about-brand .card {
+            padding: 0; } }
+        .container #about .about-info .about-brand .card .card-details {
+          padding: 2em; }
+          @media (min-width: 768px) {
+            .container #about .about-info .about-brand .card .card-details {
+              padding: 3em; }
+              .container #about .about-info .about-brand .card .card-details.card-details h2 {
+                font-size: 2.3em; } }
+          .container #about .about-info .about-brand .card .card-details h2 {
+            color: #23303e;
+            font-size: 2em;
+            font-weight: 900;
+            margin-bottom: .5em; }
+          .container #about .about-info .about-brand .card .card-details p {
+            margin: 1em auto; }
+          .container #about .about-info .about-brand .card .card-details button {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            text-transform: uppercase;
+            font-family: "Fraunces", serif;
+            color: #23303e;
+            position: relative; }
+            .container #about .about-info .about-brand .card .card-details button::after {
+              content: '';
+              position: absolute;
+              bottom: -.1em;
+              left: -.3em;
+              width: 110%;
+              height: .5em;
+              opacity: .4;
+              border-radius: 20px;
+              background-color: #fe7867;
+              z-index: -1; }
+      .container #about .about-info .about-brand .about-img {
+        overflow: hidden;
+        flex-basis: 50%; }
+        .container #about .about-info .about-brand .about-img img {
+          width: 100%;
+          height: 100%; }
+        @media (max-width: 767px) {
+          .container #about .about-info .about-brand .about-img .transform-desk {
+            display: none; }
+          .container #about .about-info .about-brand .about-img .stand-desk {
+            display: none; } }
+        @media (min-width: 768px) {
+          .container #about .about-info .about-brand .about-img .transform-mobile {
+            display: none; }
+          .container #about .about-info .about-brand .about-img .stand-mobile {
+            display: none; } }
+    .container #about .about-gallery {
+      display: flex; }
+      .container #about .about-gallery .work {
+        flex-basis: 50%;
+        height: auto;
+        position: relative; }
+        .container #about .about-gallery .work .work-info {
+          position: absolute;
+          bottom: .5em;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%;
+          padding: .1em .5em;
+          text-align: center; }
+          .container #about .about-gallery .work .work-info h3 {
+            text-transform: capitalize;
+            font-family: "Fraunces", serif;
+            font-size: 1.5em;
+            margin-bottom: 1em; }
+          .container #about .about-gallery .work .work-info p {
+            font-family: "Barlow", sans-serif;
+            font-size: .9em; }
+      @media (max-width: 768px) {
+        .container #about .about-gallery {
+          flex-direction: column;
+          height: 100vh; }
+          .container #about .about-gallery .work {
+            height: 100%; }
+            .container #about .about-gallery .work.work1 {
+              background-image: url(../images/mobile/image-graphic-design.jpg);
+              background-size: 100%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position-y: 40%; }
+            .container #about .about-gallery .work.work2 {
+              background-image: url(../images/mobile/image-photography.jpg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center; } }
+      @media (min-width: 768px) {
+        .container #about .about-gallery {
+          height: 100vh; }
+          .container #about .about-gallery .work {
+            height: 100%;
+            position: relative; }
+            .container #about .about-gallery .work .work-info {
+              width: 50%;
+              position: absolute;
+              bottom: 2em;
+              left: 50%;
+              transform: translateX(-50%);
+              text-align: center; }
+              .container #about .about-gallery .work .work-info h3 {
+                font-size: 2em;
+                margin: 1em auto; }
+              .container #about .about-gallery .work .work-info p {
+                font-family: "Barlow", sans-serif; }
+            .container #about .about-gallery .work.work1 {
+              background-image: url(../images/desktop/image-graphic-design.jpg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              color: #25564b; }
+            .container #about .about-gallery .work.work2 {
+              background-image: url(../images/desktop/image-photography.jpg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              color: #19536b; } }
+  .container #projects {
+    background-color: #f4f4f4; }
+    .container #projects header {
+      text-align: center;
+      color: #a7abae; }

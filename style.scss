@@ -9,14 +9,14 @@
 .container {
     width: 100%;
     overflow-x: hidden;
-
+// header
     #header {
         background-image: url(../images/desktop/image-header.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position-y: 90%;
         background-position-x: center;
-        background-attachment: fixed;
+        // background-attachment: fixed;
         height: 100vh;
         @media (max-width: 768px){
             background-image: url(../images/mobile/image-header.jpg);
@@ -133,7 +133,8 @@
                 }
             }
         }
-// end of 
+// end of navbar
+// hero
         #hero {
             text-align: center;
             text-transform: uppercase;
@@ -148,8 +149,214 @@
                 transform: translateY(65%);
             }
         }
-
     }
+// end of header
+// about section
+    #about {
+        width: 100%;
+        @media (max-width:768px){
+            .about-info {
+                .about-brand {
+                    flex-direction: column-reverse;
+                    text-align: center;
+                    .card {
+                        .card-details {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .about-info {
+
+            .about-brand {
+                display: flex;
+                @media (min-width:768px){
+                    &:nth-child(even){
+                        flex-direction: row-reverse;
+                    }
+                }
+                
+
+                .card {
+                    // border: 1px solid red;
+                    padding: 6em;
+                    flex-basis: 50%;
+                    text-align: left;
+                    @media (max-width: 768px){
+                        padding: 0;
+                    }
+
+                    .card-details {
+                        // border: 1px solid green;
+                        padding: 2em;
+                        @media (min-width:768px){
+                            padding: 3em;
+                            &.card-details h2 {
+                                font-size: 2.3em;
+                            }
+                        }
+                        h2 {
+                            color: $very-dark-desaturated-blue;
+                            font-size: 2em;
+                            font-weight: 900;
+                            margin-bottom: .5em;
+                        }
+                        p {
+                            margin: 1em auto;
+                        }
+                        button {
+                            border: none;
+                            outline: none;
+                            background-color: transparent;
+                            text-transform: uppercase;
+                            font-family: $font-fraunces;
+                            color: $very-dark-desaturated-blue;
+                            position: relative;
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                bottom: -.1em;
+                                left: -.3em;
+                                width: 110%;
+                                height: .5em;
+                                opacity: .4;
+                                border-radius: 20px;
+                                background-color: $soft-red;
+                                z-index: -1;
+                            }
+                        }
+                    }
+                }
+                .about-img {
+                    overflow: hidden;
+                    flex-basis: 50%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    // border: 1px solid blue;
+                    @media (max-width: 767px){
+                        .transform-desk {
+                            display: none;
+                        }
+                        .stand-desk {
+                            display: none;
+                        }
+                        
+                    }
+                    @media (min-width: 768px){
+                        .transform-mobile {
+                            display: none;
+                        }
+                        .stand-mobile {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .about-gallery {
+            display: flex;
+            .work {
+                flex-basis: 50%;
+                height: auto;
+                position: relative;
+                .work-info {
+                    position: absolute;
+                    bottom: .5em;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 100%;
+                    padding: .1em .5em;
+                    text-align: center;
+                
+                h3 {
+                    text-transform: capitalize;
+                    font-family: $font-fraunces;
+                    font-size: 1.5em;
+                    margin-bottom: 1em;
+                }
+                p {
+                    font-family: $font-barlow;
+                    font-size: .9em;
+                }
+            }
+            }
+            @media (max-width: 768px){
+                flex-direction: column;
+                height: 100vh;
+                .work {
+                    height: 100%;
+                    &.work1{
+                        background-image: url(../images/mobile/image-graphic-design.jpg);
+                        background-size: 100%;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position-y: 40%;
+                    }
+                    &.work2{
+                        background-image: url(../images/mobile/image-photography.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+            }
+            @media (min-width: 768px){
+                height: 100vh;
+                .work {
+                    height: 100%;
+                    position: relative;
+                    .work-info {
+                        width: 50%;
+                        position: absolute;
+                        bottom: 2em;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        text-align: center;
+                        h3 {
+                            font-size: 2em;
+                            margin: 1em auto;
+                            
+                        }
+                        p {
+                            font-family: $font-barlow;
+                        }
+                    }
+                    &.work1{
+                        background-image: url(../images/desktop/image-graphic-design.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        color: $dark-desaturated-cyan-graphic-design-text;
+                        
+                    }
+                    &.work2{
+                        background-image: url(../images/desktop/image-photography.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        color: $dark-blue-photography-text;
+                        
+                    }
+                }
+            }
+
+            
+        }
+    }
+// end of about section
+// testimonials
+    #projects {
+        background-color: #f4f4f4;
+        header {
+            text-align: center;
+            color: $grayish-blue;
+        }
+    }
+// end of testimonials
 }
 
 
