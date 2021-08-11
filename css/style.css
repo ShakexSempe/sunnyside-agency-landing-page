@@ -178,14 +178,15 @@ body {
         text-align: left; }
         @media (max-width: 768px) {
           .container #about .about-info .about-brand .card {
-            padding: 0; } }
+            padding: .5em; } }
         .container #about .about-info .about-brand .card .card-details {
           padding: 1em; }
           @media (min-width: 768px) {
             .container #about .about-info .about-brand .card .card-details {
-              padding: 3em; }
+              padding: 1em; }
               .container #about .about-info .about-brand .card .card-details.card-details h2 {
-                font-size: 2.3em; } }
+                font-size: 2em;
+                width: 90%; } }
           .container #about .about-info .about-brand .card .card-details h2 {
             font-family: "Fraunces", serif;
             color: #23303e;
@@ -193,10 +194,9 @@ body {
             font-weight: 900;
             margin-bottom: .5em; }
           .container #about .about-info .about-brand .card .card-details p {
-            margin: 1em auto;
+            margin: 2em auto;
             color: #818498;
             font-weight: 600;
-            width: 95%;
             font-family: "Barlow", sans-serif; }
           .container #about .about-info .about-brand .card .card-details button {
             border: none;
@@ -242,7 +242,7 @@ body {
             display: none; } }
     .container #about .about-gallery .work {
       flex-basis: 50%;
-      height: auto;
+      height: 50vh;
       position: relative; }
       .container #about .about-gallery .work.work1 {
         color: #25564b; }
@@ -269,7 +269,7 @@ body {
       .container #about .about-gallery {
         display: block; }
         .container #about .about-gallery .work {
-          height: 100vh; }
+          height: 50vh; }
           .container #about .about-gallery .work .work-info {
             width: 100%;
             margin: 3em auto; }

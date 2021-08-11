@@ -241,16 +241,19 @@ body{
                     flex-basis: 50%;
                     text-align: left;
                     @media (max-width: 768px){
-                        padding: 0;
+                        padding: .5em;
                     }
 
                     .card-details {
                         // border: 1px solid green;
                         padding: 1em;
                         @media (min-width:768px){
-                            padding: 3em;
-                            &.card-details h2 {
-                                font-size: 2.3em;
+                            padding: 1em;
+                            &.card-details{
+                                h2 {
+                                    font-size: 2em;
+                                    width: 90%;
+                                }
                             }
                         }
                         h2 {
@@ -261,10 +264,10 @@ body{
                             margin-bottom: .5em;
                         }
                         p {
-                            margin: 1em auto;
+                            margin: 2em auto;
                             color: $dark-grayish-blue;
                             font-weight: 600;
-                            width: 95%;
+                            // width: 95%;
                             font-family: $font-barlow;
                         }
                         button {
@@ -336,7 +339,7 @@ body{
             // display: flex;
             .work {
                 flex-basis: 50%;
-                height: auto;
+                height: 50vh;
                 position: relative;
                 &.work1 {
                     color: $dark-desaturated-cyan-graphic-design-text;
@@ -371,7 +374,7 @@ body{
             @media (max-width: 768px){
                 display: block;
                 .work {
-                    height: 100vh;
+                    height: 50vh;
                     .work-info {
                         width: 100%;
                         margin: 3em auto;
