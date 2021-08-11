@@ -34,7 +34,7 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 2em;
+      padding: 0 1.5em;
       height: 10vh; }
       @media (min-width: 768px) {
         .container #header #navbar #mobile-nav {
@@ -48,7 +48,7 @@ body {
           cursor: pointer; }
         .container #header #navbar #mobile-nav .mobile-links {
           position: absolute;
-          top: 9vh;
+          top: 10vh;
           right: 50%;
           width: 85vw;
           height: 50vh;
@@ -113,6 +113,14 @@ body {
             padding: 0 1em;
             list-style: none;
             font-family: "Barlow", sans-serif; }
+            .container #header #navbar #desktop-nav .desktop-links li #desk-contact {
+              background-color: white;
+              color: #23303e;
+              text-transform: uppercase;
+              font-family: "Fraunces", serif; }
+              .container #header #navbar #desktop-nav .desktop-links li #desk-contact:active {
+                transition: .2s;
+                transform: scale(0.9); }
             .container #header #navbar #desktop-nav .desktop-links li a {
               color: white;
               text-decoration: none;

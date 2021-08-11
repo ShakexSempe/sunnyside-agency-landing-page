@@ -49,7 +49,7 @@ body{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 2em;
+            padding: 0 1.5em;
             height: 10vh;
 
             #mobile-nav {
@@ -59,9 +59,8 @@ body{
                 }
                 
                 .mobile-links {
-                    // display: none;
                     position: absolute;
-                    top: 9vh;
+                    top: 10vh;
                     right: 50%;
                     width: 85vw;
                     height: 50vh;
@@ -141,8 +140,18 @@ body{
                     li {
                         padding: 0 1em;
                         list-style: none;
-                        font-family: $font-barlow;;
+                        font-family: $font-barlow;
+                        #desk-contact {
+                             background-color: $white;
+                             color: $very-dark-desaturated-blue;
+                             text-transform: uppercase;
+                             font-family: $font-fraunces;;
 
+                             &:active {
+                                 transition: .2s;
+                                 transform: scale(.9);
+                             }
+                        }
                         a {
                             color: $white;
                             text-decoration: none;
