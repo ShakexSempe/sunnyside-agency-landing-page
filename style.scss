@@ -249,6 +249,9 @@ body{
                         }
                         p {
                             margin: 1em auto;
+                            color: $dark-grayish-blue;
+                            font-weight: 600;
+                            font-family: $font-barlow;
                         }
                         button {
                             border: none;
@@ -259,7 +262,7 @@ body{
                             color: $very-dark-desaturated-blue;
                             position: relative;
                             cursor: pointer;
-
+                            // colored underline
                             &::after {
                                 content: '';
                                 position: absolute;
@@ -269,22 +272,21 @@ body{
                                 height: .5em;
                                 opacity: .4;
                                 border-radius: 20px;
-                                background-color: $soft-red;
                                 z-index: -1;
+                                transition: .2s;
+                            }
+                            &.transform-button {
+                                &::after {background-color: $yellow;}
+                            }
+                            &.card-button {
+                                &::after {background-color: $soft-red}
                             }
                             &:hover {
-                                &.transform-button {
-                                    &::after {
-                                        opacity: 1;
-                                        background-color: $yellow;
-                                    }
-                                }
-                                &.card-button {
-                                    &::after {
-                                        opacity: 1;
-                                    }
-                                }
+                                &::after {opacity: 1;}
+                                
                             }
+                            // end of colored underline
+
                         }
                     }
                 }

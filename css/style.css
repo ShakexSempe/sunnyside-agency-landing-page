@@ -182,7 +182,10 @@ body {
             font-weight: 900;
             margin-bottom: .5em; }
           .container #about .about-info .about-brand .card .card-details p {
-            margin: 1em auto; }
+            margin: 1em auto;
+            color: #818498;
+            font-weight: 600;
+            font-family: "Barlow", sans-serif; }
           .container #about .about-info .about-brand .card .card-details button {
             border: none;
             outline: none;
@@ -201,12 +204,13 @@ body {
               height: .5em;
               opacity: .4;
               border-radius: 20px;
-              background-color: #fe7867;
-              z-index: -1; }
-            .container #about .about-info .about-brand .card .card-details button:hover.transform-button::after {
-              opacity: 1;
+              z-index: -1;
+              transition: .2s; }
+            .container #about .about-info .about-brand .card .card-details button.transform-button::after {
               background-color: #fad400; }
-            .container #about .about-info .about-brand .card .card-details button:hover.card-button::after {
+            .container #about .about-info .about-brand .card .card-details button.card-button::after {
+              background-color: #fe7867; }
+            .container #about .about-info .about-brand .card .card-details button:hover::after {
               opacity: 1; }
       .container #about .about-info .about-brand .about-img {
         overflow: hidden;
