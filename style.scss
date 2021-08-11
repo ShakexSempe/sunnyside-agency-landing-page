@@ -91,8 +91,8 @@ body{
                             width: 100%;
                             height: 3em;
                             background: #3ebfff;
-                            border: none;
-                            outline: none;
+                            border: 1px solid #3ebfff;
+                            outline:1px solid #3ebfff;
                         }
                         &::after {
                             content: '';
@@ -194,8 +194,9 @@ body{
             h1 {
                 color: $white;
                 font-size: 2em;
+                margin-top: 9vh;
+                padding-top: 5vh;
                 font-family: $font-fraunces;
-                margin-top: 10vh;
                 letter-spacing: .2em;
             }
             .arrow {
