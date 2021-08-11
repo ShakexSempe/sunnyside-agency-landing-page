@@ -295,3 +295,46 @@
           .container #projects .client-grid .client .name span {
             font-family: "Barlow", sans-serif;
             color: #a7abae; }
+  .container #contact {
+    width: 100%;
+    text-align: center;
+    background-color: #458c7e;
+    color: #25564b; }
+    @media (min-width: 768px) {
+      .container #contact #mobile-gallery {
+        display: none; }
+      .container #contact #desktop-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); }
+        .container #contact #desktop-gallery figure img {
+          width: 100%; } }
+    @media (max-width: 768px) {
+      .container #contact #desktop-gallery {
+        display: none; }
+      .container #contact #mobile-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); }
+        .container #contact #mobile-gallery figure img {
+          width: 100%;
+          height: 100%; } }
+    .container #contact h3 {
+      margin: 1em auto;
+      font-family: "Barlow", sans-serif;
+      font-weight: 600;
+      font-size: 2em; }
+    .container #contact ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1em auto; }
+      .container #contact ul li {
+        padding: 1em 1.5em;
+        list-style: none;
+        font-weight: 600; }
+    .container #contact .links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1em auto; }
+      .container #contact .links a {
+        padding: 1em; }
