@@ -81,7 +81,7 @@ body {
             .container #header #navbar #mobile-nav .mobile-links ul::after {
               content: '';
               position: absolute;
-              top: 1.8em;
+              top: 2em;
               transform: skewY(-50deg);
               right: 0;
               width: 3em;
@@ -104,6 +104,8 @@ body {
                 font-weight: 900;
                 text-transform: uppercase;
                 font-family: "Fraunces", serif; }
+                .container #header #navbar #mobile-nav .mobile-links ul li button a {
+                  color: #23303e; }
       .container #header #navbar #desktop-nav {
         width: auto;
         padding: 0 2em; }
@@ -178,7 +180,7 @@ body {
           .container #about .about-info .about-brand .card {
             padding: 0; } }
         .container #about .about-info .about-brand .card .card-details {
-          padding: 2em; }
+          padding: 1em; }
           @media (min-width: 768px) {
             .container #about .about-info .about-brand .card .card-details {
               padding: 3em; }
@@ -194,6 +196,7 @@ body {
             margin: 1em auto;
             color: #818498;
             font-weight: 600;
+            width: 95%;
             font-family: "Barlow", sans-serif; }
           .container #about .about-info .about-brand .card .card-details button {
             border: none;

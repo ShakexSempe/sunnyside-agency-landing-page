@@ -97,7 +97,7 @@ body{
                         &::after {
                             content: '';
                             position: absolute;
-                            top: 1.8em;
+                            top: 2em;
                             transform: skewY(-50deg);
                             right: 0;
                             width: 3em;
@@ -123,6 +123,9 @@ body{
                                 font-weight: 900;
                                 text-transform: uppercase;
                                 font-family: $font-fraunces;
+                                a {
+                                    color: $very-dark-desaturated-blue;
+                                }
                             }
                         
                         }
@@ -243,7 +246,7 @@ body{
 
                     .card-details {
                         // border: 1px solid green;
-                        padding: 2em;
+                        padding: 1em;
                         @media (min-width:768px){
                             padding: 3em;
                             &.card-details h2 {
@@ -261,6 +264,7 @@ body{
                             margin: 1em auto;
                             color: $dark-grayish-blue;
                             font-weight: 600;
+                            width: 95%;
                             font-family: $font-barlow;
                         }
                         button {
