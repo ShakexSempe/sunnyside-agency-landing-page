@@ -3,26 +3,38 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 18px
+    font-size: 18px;
+    scroll-behavior: smooth;
+    // scroll-margin-top: 20vh;
+    scroll-padding-top: 3em;
+    
 }
-
+body{
+    width: 100vw;
+}
 .container {
     width: 100%;
     overflow-x: hidden;
+    position: relative;
 // header
     #header {
         background-image: url(../images/desktop/image-header.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position-y: 90%;
+        background-position-y: 10%;
         background-position-x: center;
-        // background-attachment: fixed;
+        background-attachment: fixed;
         height: 100vh;
         @media (max-width: 768px){
             background-image: url(../images/mobile/image-header.jpg);
         }
 // navbar
         #navbar {
+            position: fixed;
+            top: 0;
+            background-color: #3ebfff;
+            width: 100%;
+            z-index: 10;
             @media(min-width: 768px){
                 #mobile-nav {
                     display: none;
@@ -41,6 +53,7 @@
             height: 10vh;
 
             #mobile-nav {
+                overflow: hidden;
                 #toggle {
                     cursor: pointer;
                 }
@@ -55,12 +68,12 @@
                     padding: 1em;
                     background-color: $white;
                     text-align: center;
-                    z-index: 3;
                     right: -100%;
                     transition: .5s;
                     &.active {
+                        // display: block;
                         right: 50%;
-                    transition: .5s;
+                        transition: .5s;
                         transform: translateX(50%);
                     }
 
@@ -126,8 +139,8 @@
                                             inset -3px -3px 4px #000a;
                             }
                             &:hover {
-                                background-color: $white;
-                                color: $dark-grayish-blue;
+                                background-color: transparent;
+                                color: $white;
                                 &::after{
                                     opacity: 1;
                                 }
@@ -151,7 +164,7 @@
                 letter-spacing: .2em;
             }
             .arrow {
-                transform: translateY(65%);
+                transform: translateY(130%);
             }
         }
     }
@@ -218,6 +231,7 @@
                             font-family: $font-fraunces;
                             color: $very-dark-desaturated-blue;
                             position: relative;
+                            cursor: pointer;
 
                             &::after {
                                 content: '';
@@ -230,6 +244,19 @@
                                 border-radius: 20px;
                                 background-color: $soft-red;
                                 z-index: -1;
+                            }
+                            &:hover {
+                                &.transform-button {
+                                    &::after {
+                                        opacity: 1;
+                                        background-color: $yellow;
+                                    }
+                                }
+                                &.card-button {
+                                    &::after {
+                                        opacity: 1;
+                                    }
+                                }
                             }
                         }
                     }
@@ -479,6 +506,11 @@
                 padding: 1em 1.5em;
                 list-style: none;
                 font-weight: 600;
+                cursor: pointer;
+
+                &:hover {
+                    color: $white;
+                }
             }
         }
         .links {
@@ -486,8 +518,15 @@
             justify-content: center;
             align-items: center;
             margin: 1em auto;
+            cursor: pointer;
+            &:hover {
+                a {
+                    img { color: $white;}
+                }
+            }
             a {
                 padding: 1em;
+                
             }
         }
         // social links
