@@ -269,7 +269,7 @@ body {
       .container #about .about-gallery {
         display: block; }
         .container #about .about-gallery .work {
-          height: 50vh; }
+          height: 100vh; }
           .container #about .about-gallery .work .work-info {
             width: 100%;
             margin: 3em auto; }
