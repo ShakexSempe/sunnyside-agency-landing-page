@@ -249,7 +249,8 @@
             background-position: center; } }
   .container #projects {
     background-color: #f4f4f4;
-    padding: 2em 1em; }
+    padding: 2em 1em;
+    height: 100%; }
     .container #projects header {
       text-align: center;
       color: #a7abae;
@@ -260,24 +261,37 @@
       margin: 1em auto; }
     .container #projects .client-grid {
       display: grid;
-      place-items: center;
+      margin: 5em auto;
       grid-template-columns: 1fr 1fr 1fr; }
       @media (max-width: 768px) {
         .container #projects .client-grid {
           grid-template-columns: 1fr; } }
       .container #projects .client-grid .client {
-        text-align: center; }
+        text-align: center;
+        font-family: "Barlow", sans-serif; }
         .container #projects .client-grid .client figure {
           height: 7em;
           width: 7em;
           border-radius: 50%;
-          border: 1px solid red;
+          border: none;
           overflow: hidden;
           margin: 2em auto; }
           .container #projects .client-grid .client figure img {
             width: 100%; }
         .container #projects .client-grid .client .review {
-          padding: 1.9em; }
+          width: 90%;
+          font-size: 1em;
+          padding: 2em;
+          color: #5a636c;
+          font-weight: 599; }
           @media (max-width: 768px) {
             .container #projects .client-grid .client .review {
-              padding: 1em; } }
+              padding: .5em;
+              width: 95%; } }
+        .container #projects .client-grid .client .name {
+          font-family: "Fraunces", serif;
+          padding: 1em;
+          margin: 1em auto; }
+          .container #projects .client-grid .client .name span {
+            font-family: "Barlow", sans-serif;
+            color: #a7abae; }

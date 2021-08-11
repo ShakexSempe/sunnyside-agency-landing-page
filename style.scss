@@ -364,6 +364,7 @@
     #projects {
         background-color: #f4f4f4;
         padding: 2em 1em;
+        height: 100%;
         header {
             text-align: center;
             color: $grayish-blue;
@@ -375,19 +376,20 @@
         }
         .client-grid {
             display: grid;
-            place-items: center;
+            margin: 5em auto;
             grid-template-columns: 1fr 1fr 1fr;
             @media (max-width: 768px) {
                 grid-template-columns: 1fr;
             }
             .client {
                 text-align: center;
+                font-family: $font-barlow;
 
                 figure {
                     height: 7em;
                     width: 7em;
                     border-radius: 50%;
-                    border: 1px solid red;
+                    border: none;
                     overflow: hidden;
                     margin: 2em auto;
 
@@ -396,9 +398,23 @@
                     }
                 }
                 .review {
-                    padding: 1.9em;
+                    width: 90%;
+                    font-size: 1em;
+                    padding: 2em;
+                    color: $very-dark-grayish-blue;
+                    font-weight: 599;
                     @media(max-width: 768px){
-                        padding: 1em;
+                        padding: .5em;
+                        width: 95%;
+                    }
+                }
+                .name {
+                    font-family: $font-fraunces;
+                    padding: 1em;
+                    margin: 1em auto;
+                    span {
+                        font-family: $font-barlow;
+                        color: $grayish-blue
                     }
                 }
 
