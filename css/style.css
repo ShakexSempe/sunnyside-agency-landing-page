@@ -176,6 +176,7 @@ body {
               .container #about .about-info .about-brand .card .card-details.card-details h2 {
                 font-size: 2.3em; } }
           .container #about .about-info .about-brand .card .card-details h2 {
+            font-family: "Fraunces", serif;
             color: #23303e;
             font-size: 2em;
             font-weight: 900;
@@ -233,7 +234,7 @@ body {
         color: #19536b; }
       .container #about .about-gallery .work .work-info {
         position: absolute;
-        bottom: .5em;
+        bottom: 1em;
         left: 50%;
         transform: translateX(-50%);
         width: 100%;

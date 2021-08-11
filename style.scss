@@ -241,6 +241,7 @@ body{
                             }
                         }
                         h2 {
+                            font-family: $font-fraunces;
                             color: $very-dark-desaturated-blue;
                             font-size: 2em;
                             font-weight: 900;
@@ -329,7 +330,7 @@ body{
                 }
                 .work-info {
                     position: absolute;
-                    bottom: .5em;
+                    bottom: 1em;
                     left: 50%;
                     transform: translateX(-50%);
                     width: 100%;
