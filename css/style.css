@@ -175,77 +175,109 @@
             display: none; }
           .container #about .about-info .about-brand .about-img .stand-mobile {
             display: none; } }
-    .container #about .about-gallery {
-      display: flex; }
-      .container #about .about-gallery .work {
-        flex-basis: 50%;
-        height: auto;
-        position: relative; }
-        .container #about .about-gallery .work .work-info {
-          position: absolute;
-          bottom: .5em;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 100%;
-          padding: .1em .5em;
-          text-align: center; }
-          .container #about .about-gallery .work .work-info h3 {
-            text-transform: capitalize;
-            font-family: "Fraunces", serif;
-            font-size: 1.5em;
-            margin-bottom: 1em; }
-          .container #about .about-gallery .work .work-info p {
-            font-family: "Barlow", sans-serif;
-            font-size: .9em; }
-      @media (max-width: 768px) {
-        .container #about .about-gallery {
-          flex-direction: column;
+    .container #about .about-gallery .work {
+      flex-basis: 50%;
+      height: auto;
+      position: relative; }
+      .container #about .about-gallery .work.work1 {
+        color: #25564b; }
+      .container #about .about-gallery .work.work2 {
+        color: #19536b; }
+      .container #about .about-gallery .work .work-info {
+        position: absolute;
+        bottom: .5em;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        padding: .1em .5em;
+        text-align: center;
+        width: 50%; }
+        .container #about .about-gallery .work .work-info h3 {
+          text-transform: capitalize;
+          font-family: "Fraunces", serif;
+          font-size: 1.5em;
+          margin-bottom: 1em; }
+        .container #about .about-gallery .work .work-info p {
+          font-family: "Barlow", sans-serif;
+          font-size: .9em; }
+    @media (max-width: 768px) {
+      .container #about .about-gallery {
+        display: block; }
+        .container #about .about-gallery .work {
           height: 100vh; }
-          .container #about .about-gallery .work {
-            height: 100%; }
-            .container #about .about-gallery .work.work1 {
-              background-image: url(../images/mobile/image-graphic-design.jpg);
-              background-size: 100%;
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position-y: 40%; }
-            .container #about .about-gallery .work.work2 {
-              background-image: url(../images/mobile/image-photography.jpg);
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center; } }
-      @media (min-width: 768px) {
-        .container #about .about-gallery {
-          height: 100vh; }
-          .container #about .about-gallery .work {
-            height: 100%;
-            position: relative; }
-            .container #about .about-gallery .work .work-info {
-              width: 50%;
-              position: absolute;
-              bottom: 2em;
-              left: 50%;
-              transform: translateX(-50%);
-              text-align: center; }
-              .container #about .about-gallery .work .work-info h3 {
-                font-size: 2em;
-                margin: 1em auto; }
-              .container #about .about-gallery .work .work-info p {
-                font-family: "Barlow", sans-serif; }
-            .container #about .about-gallery .work.work1 {
-              background-image: url(../images/desktop/image-graphic-design.jpg);
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-              color: #25564b; }
-            .container #about .about-gallery .work.work2 {
-              background-image: url(../images/desktop/image-photography.jpg);
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-              color: #19536b; } }
+          .container #about .about-gallery .work .work-info {
+            width: 100%;
+            margin: 3em auto; }
+          .container #about .about-gallery .work.work1 {
+            background-image: url(../images/mobile/image-graphic-design.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center; }
+          .container #about .about-gallery .work.work2 {
+            background-image: url(../images/mobile/image-photography.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center; } }
+    @media (min-width: 768px) {
+      .container #about .about-gallery {
+        height: 100vh;
+        display: flex; }
+        .container #about .about-gallery .work {
+          height: 100%;
+          position: relative; }
+          .container #about .about-gallery .work .work-info {
+            width: 50%;
+            position: absolute;
+            bottom: 2em;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center; }
+            .container #about .about-gallery .work .work-info h3 {
+              font-size: 2em;
+              margin: 1em auto; }
+            .container #about .about-gallery .work .work-info p {
+              font-family: "Barlow", sans-serif; }
+          .container #about .about-gallery .work.work1 {
+            background-image: url(../images/desktop/image-graphic-design.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center; }
+          .container #about .about-gallery .work.work2 {
+            background-image: url(../images/desktop/image-photography.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center; } }
   .container #projects {
-    background-color: #f4f4f4; }
+    background-color: #f4f4f4;
+    padding: 2em 1em; }
     .container #projects header {
       text-align: center;
-      color: #a7abae; }
+      color: #a7abae;
+      letter-spacing: .2em;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 1em;
+      margin: 1em auto; }
+    .container #projects .client-grid {
+      display: grid;
+      place-items: center;
+      grid-template-columns: 1fr 1fr 1fr; }
+      @media (max-width: 768px) {
+        .container #projects .client-grid {
+          grid-template-columns: 1fr; } }
+      .container #projects .client-grid .client {
+        text-align: center; }
+        .container #projects .client-grid .client figure {
+          height: 7em;
+          width: 7em;
+          border-radius: 50%;
+          border: 1px solid red;
+          overflow: hidden;
+          margin: 2em auto; }
+          .container #projects .client-grid .client figure img {
+            width: 100%; }
+        .container #projects .client-grid .client .review {
+          padding: 1.9em; }
+          @media (max-width: 768px) {
+            .container #projects .client-grid .client .review {
+              padding: 1em; } }
