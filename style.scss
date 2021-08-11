@@ -41,7 +41,7 @@
             height: 10vh;
 
             #mobile-nav {
-                .toggle {
+                #toggle {
                     cursor: pointer;
                 }
                 
@@ -53,11 +53,16 @@
                     width: 85vw;
                     height: 50vh;
                     padding: 1em;
-                    transform: translateX(50%);
                     background-color: $white;
                     text-align: center;
                     z-index: 3;
-                    // right: -100%;
+                    right: -100%;
+                    transition: .5s;
+                    &.active {
+                        right: 50%;
+                    transition: .5s;
+                        transform: translateX(50%);
+                    }
 
                     ul {
                         font-family: $font-barlow;

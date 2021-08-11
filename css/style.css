@@ -30,7 +30,7 @@
       @media (max-width: 768px) {
         .container #header #navbar #desktop-nav {
           display: none; } }
-      .container #header #navbar #mobile-nav .toggle {
+      .container #header #navbar #mobile-nav #toggle {
         cursor: pointer; }
       .container #header #navbar #mobile-nav .mobile-links {
         position: absolute;
@@ -39,10 +39,15 @@
         width: 85vw;
         height: 50vh;
         padding: 1em;
-        transform: translateX(50%);
         background-color: white;
         text-align: center;
-        z-index: 3; }
+        z-index: 3;
+        right: -100%;
+        transition: .5s; }
+        .container #header #navbar #mobile-nav .mobile-links.active {
+          right: 50%;
+          transition: .5s;
+          transform: translateX(50%); }
         .container #header #navbar #mobile-nav .mobile-links ul {
           font-family: "Barlow", sans-serif;
           padding: 1em;
