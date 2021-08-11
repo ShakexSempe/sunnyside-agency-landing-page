@@ -79,7 +79,10 @@ body {
                 border: none;
                 outline: none;
                 border-radius: 20px;
-                cursor: pointer; }
+                cursor: pointer;
+                font-weight: 900;
+                text-transform: uppercase;
+                font-family: "Fraunces", serif; }
       .container #header #navbar #desktop-nav {
         width: auto;
         padding: 0 2em; }
