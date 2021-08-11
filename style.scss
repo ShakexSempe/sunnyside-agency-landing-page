@@ -225,7 +225,7 @@ body{
             }
         }
         .about-info {
-
+            // egg and cup page
             .about-brand {
                 display: flex;
                 @media (min-width:768px){
@@ -335,6 +335,8 @@ body{
                 }
             }
         }
+            // egg and cup page
+        // graphic design and photography section
         .about-gallery {
             // display: flex;
             .work {
@@ -436,9 +438,10 @@ body{
 
             
         }
+        // end ofgraphic design and photography section
     }
 // end of about section
-// testimonials
+// testimonials section
     #projects {
         background-color: #f4f4f4;
         padding: 2em 1em;
@@ -482,8 +485,8 @@ body{
                     color: $very-dark-grayish-blue;
                     font-weight: 599;
                     @media(max-width: 768px){
-                        padding: .5em;
-                        width: 95%;
+                        padding: .3em;
+                        width: 100%;
                     }
                 }
                 .name {
