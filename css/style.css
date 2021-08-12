@@ -270,15 +270,19 @@ body {
       .container #about .about-gallery {
         display: block; }
         .container #about .about-gallery .work {
-          height: 100vh; }
+          height: 80vh;
+          background-color: green; }
           .container #about .about-gallery .work .work-info {
             width: 100%;
-            margin: 3em auto; }
+            padding: 1em;
+            margin: 1em auto; }
+            .container #about .about-gallery .work .work-info p {
+              font-size: .9em; }
           .container #about .about-gallery .work.work1 {
             background-image: url(../images/mobile/image-graphic-design.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: center; }
+            background-position: bottom; }
           .container #about .about-gallery .work.work2 {
             background-image: url(../images/mobile/image-photography.jpg);
             background-size: cover;
