@@ -556,29 +556,37 @@ body{
                 list-style: none;
                 font-weight: 600;
                 cursor: pointer;
+                transition: .3s;
 
                 &:hover {
+                    transform: scale(1.1);
                     color: $white;
                 }
             }
         }
+        // social media links
         .links {
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 1em auto;
             cursor: pointer;
-            &:hover {
-                a {
-                    img { color: $white;}
-                }
-            }
             a {
                 padding: 1em;
-                
+                i {
+                    transition: .3s;
+                    color: $dark-desaturated-cyan-graphic-design-text;
+                }
+                &:hover {
+                    i {
+                        color: $white;
+                        transform: scale(1.5);
+                    }
+                }
             }
         }
-        // social links
+        // end of social media links
+
     }
 // end of contact 
 }

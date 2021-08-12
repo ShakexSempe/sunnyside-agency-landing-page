@@ -396,8 +396,10 @@ body {
         padding: 1em;
         list-style: none;
         font-weight: 600;
-        cursor: pointer; }
+        cursor: pointer;
+        transition: .3s; }
         .container #contact ul li:hover {
+          transform: scale(1.1);
           color: white; }
     .container #contact .links {
       display: flex;
@@ -405,7 +407,11 @@ body {
       align-items: center;
       margin: 1em auto;
       cursor: pointer; }
-      .container #contact .links:hover a img {
-        color: white; }
       .container #contact .links a {
         padding: 1em; }
+        .container #contact .links a i {
+          transition: .3s;
+          color: #25564b; }
+        .container #contact .links a:hover i {
+          color: white;
+          transform: scale(1.5); }
