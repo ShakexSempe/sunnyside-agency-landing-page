@@ -360,16 +360,16 @@ body{
                     width: 50%;
                     
                 
-                h3 {
+                h2 {
                     text-transform: capitalize;
                     font-family: $font-fraunces;
                     font-size: 1.5em;
                     margin-bottom: 1em;
+                    font-weight: 900;
                 }
                 p {
                     font-family: $font-barlow;
-                    font-size: .9em;
-                    
+                    font-size: 1em;
                 }
             }
             }
@@ -402,13 +402,13 @@ body{
                     height: 100%;
                     position: relative;
                     .work-info {
-                        width: 50%;
+                        width: 55%;
                         position: absolute;
-                        bottom: 2em;
+                        bottom: 20%;
                         left: 50%;
                         transform: translateX(-50%);
                         text-align: center;
-                        h3 {
+                        h2 {
                             font-size: 2em;
                             margin: 1em auto;
                             
@@ -438,7 +438,7 @@ body{
 
             
         }
-        // end ofgraphic design and photography section
+        // end of graphic design and photography section
     }
 // end of about section
 // testimonials section

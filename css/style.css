@@ -257,14 +257,15 @@ body {
         padding: .1em .5em;
         text-align: center;
         width: 50%; }
-        .container #about .about-gallery .work .work-info h3 {
+        .container #about .about-gallery .work .work-info h2 {
           text-transform: capitalize;
           font-family: "Fraunces", serif;
           font-size: 1.5em;
-          margin-bottom: 1em; }
+          margin-bottom: 1em;
+          font-weight: 900; }
         .container #about .about-gallery .work .work-info p {
           font-family: "Barlow", sans-serif;
-          font-size: .9em; }
+          font-size: 1em; }
     @media (max-width: 768px) {
       .container #about .about-gallery {
         display: block; }
@@ -291,13 +292,13 @@ body {
           height: 100%;
           position: relative; }
           .container #about .about-gallery .work .work-info {
-            width: 50%;
+            width: 55%;
             position: absolute;
-            bottom: 2em;
+            bottom: 20%;
             left: 50%;
             transform: translateX(-50%);
             text-align: center; }
-            .container #about .about-gallery .work .work-info h3 {
+            .container #about .about-gallery .work .work-info h2 {
               font-size: 2em;
               margin: 1em auto; }
             .container #about .about-gallery .work .work-info p {
