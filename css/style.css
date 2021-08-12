@@ -183,7 +183,7 @@ body {
           padding: 1em; }
           @media (min-width: 768px) {
             .container #about .about-info .about-brand .card .card-details {
-              padding: 1em; }
+              padding: 1.3em; }
               .container #about .about-info .about-brand .card .card-details.card-details h2 {
                 font-size: 2em;
                 width: 90%; } }
