@@ -362,8 +362,9 @@ body {
             color: #a7abae; }
   .container #contact {
     width: 100%;
+    padding-bottom: .5em;
     text-align: center;
-    background-color: #458c7e;
+    background-color: #5cbca9;
     color: #25564b; }
     @media (min-width: 768px) {
       .container #contact #mobile-gallery {
@@ -405,13 +406,13 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 1em auto;
+      margin: 2em auto;
+      padding: 1em;
       cursor: pointer; }
-      .container #contact .links a {
-        padding: 1em; }
-        .container #contact .links a i {
-          transition: .3s;
-          color: #25564b; }
-        .container #contact .links a:hover i {
+      .container #contact .links i {
+        padding: 0 1em;
+        transition: .3s;
+        color: #25564b; }
+        .container #contact .links i:hover {
           color: white;
           transform: scale(1.5); }
