@@ -415,6 +415,9 @@ body {
       padding: 1em;
       cursor: pointer;
       width: 70%; }
+      @media (min-width: 768px) {
+        .container #contact .links {
+          width: 20%; } }
       .container #contact .links i {
         padding: .5em;
         transition: .3s;

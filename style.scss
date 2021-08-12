@@ -581,6 +581,9 @@ body{
             padding: 1em;
             cursor: pointer;
             width: 70%;
+            @media (min-width: 768px) {
+                width: 20%;
+            }
                 i {
                     padding: .5em;
                     transition: .3s;
