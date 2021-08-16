@@ -7,10 +7,10 @@
     scroll-behavior: smooth;
     // scroll-margin-top: 20vh;
     scroll-padding-top: 3em;
-    
 }
 body{
     width: 100vw;
+    overflow-x: hidden;
 }
 .container {
     width: 100%;
@@ -27,6 +27,8 @@ body{
         height: 100vh;
         @media (max-width: 768px){
             background-image: url(../images/mobile/image-header.jpg);
+            background-size: contain;
+            height: 60vh;
         }
     // navbar
         #navbar {
@@ -65,7 +67,7 @@ body{
                     position: absolute;
                     top: 10vh;
                     width: 85vw;
-                    height: 50vh;
+                    height: 45vh;
                     padding: 1em;
                     background-color: $white;
                     text-align: center;
@@ -237,6 +239,7 @@ body{
                 transform: translateY(100%);
                 @media (max-width: 768px){
                     padding-top: 5%;
+                    transform: translateY(10%);
                 }
             }
         }
@@ -308,6 +311,7 @@ body{
                             font-family: $font-barlow;
                         }
                         button {
+                            margin: 0 auto 2em;
                             border: none;
                             outline: none;
                             background-color: transparent;
@@ -406,6 +410,7 @@ body{
                 p {
                     font-family: $font-barlow;
                     font-size: 1em;
+                    font-weight: 900;
                 }
             }
             }
@@ -491,7 +496,7 @@ body{
             text-align: center;
             color: $grayish-blue;
             letter-spacing: .2em;
-            font-weight: 600;
+            font-weight: 900;
             text-transform: uppercase;
             padding: 1em;
             margin: 1em auto;
@@ -534,6 +539,9 @@ body{
                     font-family: $font-fraunces;
                     padding: 1em;
                     margin: 1em auto;
+                    p {
+                        margin: .5em auto;
+                    }
                     span {
                         font-family: $font-barlow;
                         color: $grayish-blue
@@ -592,6 +600,11 @@ body{
             justify-content: center;
             align-items: center;
             margin: .5em auto;
+            @media (min-width: 1000px){
+                width: 25%;
+                justify-content: space-between;
+
+            }
 
             li {
                 padding: 1em ;
