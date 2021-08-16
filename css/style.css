@@ -21,12 +21,10 @@ body {
     background-repeat: no-repeat;
     background-position-y: 10%;
     background-position-x: center;
-    background-attachment: fixed;
     height: 100vh; }
     @media (max-width: 768px) {
       .container #header {
         background-image: url(../images/mobile/image-header.jpg);
-        background-size: contain;
         height: 60vh; } }
     .container #header #navbar {
       position: fixed;
@@ -65,43 +63,44 @@ body {
             transform: translateX(50%); }
           .container #header #navbar #mobile-nav .mobile-links ul {
             font-family: "Barlow", sans-serif;
-            padding: 3em 1em;
+            padding: 2em 1em .5em;
             height: 100%;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             display: relative; }
             .container #header #navbar #mobile-nav .mobile-links ul::before {
               content: '';
               position: absolute;
               top: 0;
               left: 0;
-              width: 100%;
-              height: 3em;
+              width: 98%;
+              height: 1em;
               background: #3ebfff;
               border: 1px solid #3ebfff;
               outline: 1px solid #3ebfff; }
             .container #header #navbar #mobile-nav .mobile-links ul::after {
               content: '';
               position: absolute;
-              top: 2em;
-              transform: skewY(-50deg);
+              top: .5em;
+              transform: skewY(-40deg);
               right: 0;
-              width: 3em;
+              width: 1.5em;
               height: 3em;
               background-color: #fff;
-              z-index: 5; }
+              z-index: 1; }
             .container #header #navbar #mobile-nav .mobile-links ul li {
               list-style: none;
-              padding: 1em; }
+              padding: .5em; }
               .container #header #navbar #mobile-nav .mobile-links ul li a {
                 color: #5a636c;
                 text-decoration: none; }
               .container #header #navbar #mobile-nav .mobile-links ul li button {
                 background-color: #fad400;
-                padding: .5em 1em;
+                padding: 1em;
                 border: none;
                 outline: none;
-                border-radius: 20px;
+                border-radius: 50px;
                 cursor: pointer;
                 font-weight: 900;
                 text-transform: uppercase;
