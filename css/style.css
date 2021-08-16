@@ -178,7 +178,7 @@ body {
         @media (max-width: 768px) {
           .container #header #hero .arrow {
             padding-top: 5%;
-            transform: translateY(130%); } }
+            transform: translateY(15vh); } }
   .container #about {
     width: 100%; }
     @media (max-width: 768px) {
