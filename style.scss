@@ -21,14 +21,13 @@ body{
         background-image: url(../images/desktop/image-header.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position-y: 10%;
+        // background-position-y: 10%;
         background-position-x: center;
-        // background-attachment: fixed;
+        background-attachment: fixed;
         height: 100vh;
         @media (max-width: 768px){
             background-image: url(../images/mobile/image-header.jpg);
-            
-            height: 60vh;
+            // height: 60vh;
         }
     // navbar
         #navbar {
@@ -243,7 +242,7 @@ body{
                 transform: translateY(100%);
                 @media (max-width: 768px){
                     padding-top: 5%;
-                    transform: translateY(10%);
+                    transform: translateY(130%);
                 }
             }
         }

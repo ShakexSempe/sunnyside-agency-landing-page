@@ -19,13 +19,12 @@ body {
     background-image: url(../images/desktop/image-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 10%;
     background-position-x: center;
+    background-attachment: fixed;
     height: 100vh; }
     @media (max-width: 768px) {
       .container #header {
-        background-image: url(../images/mobile/image-header.jpg);
-        height: 60vh; } }
+        background-image: url(../images/mobile/image-header.jpg); } }
     .container #header #navbar {
       position: fixed;
       display: flex;
@@ -179,7 +178,7 @@ body {
         @media (max-width: 768px) {
           .container #header #hero .arrow {
             padding-top: 5%;
-            transform: translateY(10%); } }
+            transform: translateY(130%); } }
   .container #about {
     width: 100%; }
     @media (max-width: 768px) {
