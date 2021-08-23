@@ -85,6 +85,9 @@ body{
                         // border: 1px solid red;
                         font-family: $font-barlow;
                         padding: 2em 1em .5em;
+                        @media (max-width: 360px){
+                            justify-content: center;
+                        }
                         height: 100%;
                         display: flex;
                         flex-direction: column;
@@ -132,8 +135,13 @@ body{
                                 font-weight: 900;
                                 text-transform: uppercase;
                                 font-family: $font-fraunces;
+                                box-shadow: inset 2px 2px 4px #fffa,
+                                                inset -2px -2px 4px #000a;
                                 a {
                                     color: $very-dark-desaturated-blue;
+                                }
+                                @media (max-width: 360px){
+                                    padding: .5em 1em;
                                 }
                             }
                         
@@ -235,6 +243,9 @@ body{
                 padding: 8vh 0 0;
                 font-family: $font-fraunces;
                 letter-spacing: .2em;
+                @media (max-width: 320px){
+                    font-size: 1.5em;
+                }
                 @media (min-width: 768px) {
                     margin-top: 10vh;
                     font-size: 2.5em;
@@ -243,10 +254,14 @@ body{
             }
             .arrow {
                 margin: .5em auto;
+                padding-top: 3vh;
                 transform: translateY(100%);
                 @media (max-width: 768px){
                     padding-top: 5%;
                     transform: translateY(10%);
+                }
+                @media (max-width: 360px){
+                    transform: scale(.6) translateY(-50%);
                 }
             }
         }
