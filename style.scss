@@ -598,10 +598,25 @@ body{
         // social links
         .footer-logo {
             margin: 2em auto;
+            // logo box shadow
+            a {
+                display: inline-block;
+                // border: 1px solid red;
+
+                img {
+                    border: none;
+                    outline:none;
+                    padding: .5em 1em;
+                    border-radius: 3px;
+                    // box-shadow: inset 3px 3px 4px #dddddd46,
+                    //             inset -3px -3px 4px #0000003a;
+                }
+            }
+            // end of logo box shadow
         }
         ul {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             margin: .5em auto;
             @media (min-width: 1000px){
@@ -611,11 +626,21 @@ body{
             }
 
             li {
-                padding: 1em ;
+                padding: .3em 1em ;
                 list-style: none;
                 font-weight: 600;
                 cursor: pointer;
                 transition: .3s;
+                border-radius: 3px;
+                box-shadow: inset 3px 3px 4px rgba(221, 221, 221, 0.274),
+                                inset -3px -3px 4px rgba(0, 0, 0, 0.226);
+                
+                a {
+                    text-transform: capitalize;
+                    color: $dark-desaturated-cyan-graphic-design-text;
+                    text-decoration: none;
+                    
+                }
 
                 &:hover {
                     transform: scale(1.1);
