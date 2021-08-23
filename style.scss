@@ -25,7 +25,7 @@ body{
             background-attachment: fixed;
         @media (max-width: 768px){
             background-image: url(../images/mobile/image-header.jpg);
-            height: 55vh;
+            height: 60vh;
             background-attachment: unset;
             background-position: bottom;
         }
@@ -239,8 +239,7 @@ body{
             h1 {
                 color: $white;
                 font-size: 2em;
-                margin-top: 5vh;
-                padding: 8vh 0 0;
+                padding-top: 10vh;
                 font-family: $font-fraunces;
                 letter-spacing: .2em;
                 @media (max-width: 320px){
@@ -254,7 +253,7 @@ body{
             }
             .arrow {
                 margin: .5em auto;
-                padding-top: 3vh;
+                padding-top: 1vh;
                 transform: translateY(100%);
                 @media (max-width: 768px){
                     padding-top: 5%;
