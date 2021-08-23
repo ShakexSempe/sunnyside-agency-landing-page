@@ -19,10 +19,8 @@ body {
     background-image: url(../images/desktop/image-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 150%;
-    background-position-x: center;
-    background-attachment: fixed;
-    height: 100vh; }
+    background-position-y: 100%;
+    background-attachment: fixed; }
     @media (max-width: 768px) {
       .container #header {
         background-image: url(../images/mobile/image-header.jpg);
@@ -172,6 +170,7 @@ body {
                 .container #header #navbar #desktop-nav .desktop-links li a:hover::after {
                   opacity: 1; }
     .container #header #hero {
+      height: 100vh;
       text-align: center;
       text-transform: uppercase; }
       .container #header #hero h1 {
