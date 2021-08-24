@@ -1,6 +1,6 @@
 # Frontend Mentor - Sunnyside Agency Landing Page
 
-![Design preview for the Sunnyside agency landing page coding challenge](./images/sunnyside-screenshot/png)
+![](./images/sunnyside-mobile.png)
 
 ## Table of contents
 
