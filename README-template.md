@@ -1,6 +1,6 @@
-# Frontend Mentor - Order summary card solution
+# Frontend Mentor - Sunnyside Agency Landing Page
 
-This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). 
+T![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Table of contents
 
@@ -18,12 +18,12 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ### The challenge
 
 Users should be able to:
-
-- See hover states for interactive elements
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
 ### Screenshot
 
-![](./images/ordercapture.png)
+![](./images/sunnyside-screenshot.png)
 
 ### Links
 
@@ -34,12 +34,12 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- Styled using SCSS variables and Scss nested styles
-- CSS3 animations: Background image and the Hero image 
-- Flexbox layout used in Payment Plan section.
-- CSS3 box shadows around the card, summary and buttons
-- Responsive design at two break points: 375px and 1440px
-
+- Styled using SCSS variables, nested styles and variables.
+- Parallax scrolling on the header element which also contains the navigation elements.
+- Flexbox layout used in the about and footer portfolio section.
+- CSS3 box shadows around contact and social media links
+- Testimonal (#projects) section styled with CSS Grid.
+- Responsive design.
 
 ### What I learned
 

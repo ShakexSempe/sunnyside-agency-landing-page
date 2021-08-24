@@ -628,6 +628,7 @@ body{
             }
             // end of logo box shadow
         }
+        // footer navigation links
         ul {
             display: flex;
             justify-content: space-around;
@@ -655,15 +656,19 @@ body{
                     text-decoration: none;
                     
                 }
-
+                // link color on hover
                 &:hover {
                     transform: scale(1.1);
                     a {
                         color: $white;
                     } 
                 }
+                // end of link color on hover
+
             }
         }
+        // end of footer navigation links
+
         // social media links
         .links {
             display: flex;
