@@ -362,14 +362,14 @@ body {
     background-color: #f4f4f4;
     padding: 2em 1em;
     height: 100%; }
-    .container #projects header {
+    .container #projects header h1 {
       text-align: center;
-      color: #a7abae;
-      letter-spacing: .2em;
+      color: #818498;
+      letter-spacing: .25em;
       font-weight: 900;
       text-transform: uppercase;
-      padding: 1em;
-      margin: 1em auto; }
+      padding-top: 2em;
+      margin: 1em auto .5em; }
     .container #projects .client-grid {
       display: grid;
       margin: 5em auto;
@@ -404,10 +404,12 @@ body {
           padding: 1em;
           margin: 1em auto; }
           .container #projects .client-grid .client .name p {
-            margin: .5em auto; }
+            margin: .5em auto;
+            font-weight: 900; }
           .container #projects .client-grid .client .name span {
             font-family: "Barlow", sans-serif;
-            color: #a7abae; }
+            color: #a7abae;
+            font-weight: 900; }
   .container #contact {
     width: 100%;
     padding-bottom: .5em;

@@ -514,13 +514,15 @@ body{
         padding: 2em 1em;
         height: 100%;
         header {
-            text-align: center;
-            color: $grayish-blue;
-            letter-spacing: .2em;
-            font-weight: 900;
-            text-transform: uppercase;
-            padding: 1em;
-            margin: 1em auto;
+            h1 {
+                text-align: center;
+                color: $dark-grayish-blue;
+                letter-spacing: .25em;
+                font-weight: 900;
+                text-transform: uppercase;
+                padding-top: 2em;
+                margin: 1em auto .5em;
+            }
         }
         .client-grid {
             display: grid;
@@ -562,10 +564,12 @@ body{
                     margin: 1em auto;
                     p {
                         margin: .5em auto;
+                        font-weight: 900;
                     }
                     span {
                         font-family: $font-barlow;
-                        color: $grayish-blue
+                        color: $grayish-blue;
+                        font-weight: 900;
                     }
                 }
 
