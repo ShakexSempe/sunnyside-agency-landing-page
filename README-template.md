@@ -1,6 +1,6 @@
 # Frontend Mentor - Sunnyside Agency Landing Page
+![](./images/sunnyside-screenshot.png)
 
-![](./images/sunnyside-mobile.png)
 
 ## Table of contents
 
@@ -22,8 +22,8 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
-
-![](./images/sunnyside-screenshot.png)
+![](./images/sunnyside-mobile.png)
+![](./images/sunnyside-mobile.png)
 
 ### Links
 
