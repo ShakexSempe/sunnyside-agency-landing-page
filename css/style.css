@@ -462,8 +462,9 @@ body {
           color: #25564b;
           text-decoration: none; }
         .container #contact ul li:hover {
-          transform: scale(1.1);
-          color: white; }
+          transform: scale(1.1); }
+          .container #contact ul li:hover a {
+            color: white; }
     .container #contact .links {
       display: flex;
       justify-content: center;
