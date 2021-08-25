@@ -132,9 +132,10 @@ body {
                                 text-decoration: none;
                             }
                             
-                            button {
+                            #mobile-contact {
                                 background-color: $yellow;
                                 padding: 1em;
+                                margin: 1em auto ;
                                 border: none;
                                 outline: none;
                                 border-radius: 50px;
@@ -142,11 +143,10 @@ body {
                                 font-weight: 900;
                                 text-transform: uppercase;
                                 font-family: $font-fraunces;
+                                color: $very-dark-desaturated-blue;
                                 box-shadow: inset 2px 2px 4px #fffa,
                                                 inset -2px -2px 4px #000a;
-                                a {
-                                    color: $very-dark-desaturated-blue;
-                                }
+                                
                                 @media (max-width: 360px){
                                     padding: .5em 1em;
                                 }
@@ -631,10 +631,13 @@ body {
                 // border: 1px solid red;
 
                 img {
+                    display: none;
                     border: none;
                     outline:none;
                     padding: .5em 1em;
                     border-radius: 3px;
+                    // box-shadow: inset 3px 3px 4px #dddddd46,
+                    //             inset -3px -3px 4px #0000003a;
                 }
             }
             // end of logo box shadow

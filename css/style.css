@@ -106,9 +106,10 @@ body {
               .container #header #navbar #mobile-nav .mobile-links ul li a {
                 color: #5a636c;
                 text-decoration: none; }
-              .container #header #navbar #mobile-nav .mobile-links ul li button {
+              .container #header #navbar #mobile-nav .mobile-links ul li #mobile-contact {
                 background-color: #fad400;
                 padding: 1em;
+                margin: 1em auto;
                 border: none;
                 outline: none;
                 border-radius: 50px;
@@ -116,11 +117,10 @@ body {
                 font-weight: 900;
                 text-transform: uppercase;
                 font-family: "Fraunces", serif;
+                color: #23303e;
                 box-shadow: inset 2px 2px 4px #fffa, inset -2px -2px 4px #000a; }
-                .container #header #navbar #mobile-nav .mobile-links ul li button a {
-                  color: #23303e; }
                 @media (max-width: 360px) {
-                  .container #header #navbar #mobile-nav .mobile-links ul li button {
+                  .container #header #navbar #mobile-nav .mobile-links ul li #mobile-contact {
                     padding: .5em 1em; } }
       .container #header #navbar #desktop-nav {
         width: auto;
@@ -443,6 +443,7 @@ body {
       .container #contact .footer-logo a {
         display: inline-block; }
         .container #contact .footer-logo a img {
+          display: none;
           border: none;
           outline: none;
           padding: .5em 1em;
