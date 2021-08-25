@@ -437,7 +437,7 @@ body {
                     margin-bottom: 1em;
                     font-weight: 900;
                 }
-                p {
+                h3 {
                     font-family: $font-barlow;
                     font-size: 1em;
                     font-weight: 900;
@@ -595,8 +595,8 @@ body {
         color: $dark-desaturated-cyan-graphic-design-text;
         // desktop gallery
         @media (min-width: 768px) {
-            #mobile-gallery { display: none}
-            #desktop-gallery {
+            .mobile-gallery { display: none}
+            .desktop-gallery {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 figure {
@@ -609,8 +609,8 @@ body {
         // end of desktop gallery
         // mobile gallery 
         @media (max-width: 768px) {
-            #desktop-gallery {display: none}
-            #mobile-gallery { 
+            .desktop-gallery {display: none}
+            .mobile-gallery { 
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 figure {
