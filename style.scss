@@ -39,7 +39,7 @@ body {
             background-position: bottom;
         }
     // navbar
-        #nav-bar {
+        #navbar {
             // hide mobile nav links on desktop
             // hide desktop nav links on mobile
             @media(min-width: 768px){
@@ -521,6 +521,9 @@ body {
     #projects {
         background-color: #f4f4f4;
         padding: 2em 1em;
+        @media (min-width: 1024px) {
+            padding: 10vh 0;
+        }
         height: 100%;
         header {
             h1 {
