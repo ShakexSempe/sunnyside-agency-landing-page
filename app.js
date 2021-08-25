@@ -1,7 +1,12 @@
+// nav menu toggle
+// select toggle element and links
 const toggle = document.getElementById('toggle');
 const nav = document.querySelector('.mobile-links');
-console.log(nav);
-
+// toggle event listener to display menu on click of toggle element by adding class active
 toggle.addEventListener("click", () => {
     nav.classList.toggle('active');
 })
+
+// Date
+const date = document.getElementById("date");
+date.innerHTML = new Date().getFullYear();

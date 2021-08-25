@@ -10,6 +10,11 @@
 body {
   width: 100vw;
   overflow-x: hidden; }
+  body .attribution {
+    text-align: center;
+    padding: .1em 0; }
+    body .attribution a {
+      color: #3e52a3; }
 
 .container {
   width: 100%;
@@ -414,7 +419,7 @@ body {
     width: 100%;
     padding-bottom: .5em;
     text-align: center;
-    background-color: #61d6a9;
+    background-color: rgba(69, 140, 126, 0.575);
     color: #25564b; }
     @media (min-width: 768px) {
       .container #contact #mobile-gallery {

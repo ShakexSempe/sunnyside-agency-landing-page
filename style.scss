@@ -7,9 +7,18 @@
     scroll-behavior: smooth;
     scroll-padding-top: 3em;
 }
-body{
+body {
     width: 100vw;
     overflow-x: hidden;
+
+    .attribution {
+        text-align: center;
+        padding: .1em 0;
+
+        a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
 }
 .container {
     width: 100%;
@@ -582,7 +591,7 @@ body{
         width: 100%;
         padding-bottom: .5em;
         text-align: center;
-        background-color: hsl(157, 59%, 61%);
+        background-color: $dark-moderate-cyan-footer;
         color: $dark-desaturated-cyan-graphic-design-text;
         // desktop gallery
         @media (min-width: 768px) {
