@@ -106,7 +106,7 @@ body {
               .container #header #navbar .mobile-nav .mobile-links ul li a {
                 color: #5a636c;
                 text-decoration: none; }
-              .container #header #navbar .mobile-nav .mobile-links ul li #mobile-contact {
+              .container #header #navbar .mobile-nav .mobile-links ul li .mobile-contact {
                 background-color: #fad400;
                 padding: 1em;
                 margin: 1em auto;
@@ -120,7 +120,7 @@ body {
                 color: #23303e;
                 box-shadow: inset 2px 2px 4px #fffa, inset -2px -2px 4px #000a; }
                 @media (max-width: 360px) {
-                  .container #header #navbar .mobile-nav .mobile-links ul li #mobile-contact {
+                  .container #header #navbar .mobile-nav .mobile-links ul li .mobile-contact {
                     padding: .5em 1em; } }
       .container #header #navbar .desktop-nav {
         width: auto;
@@ -131,12 +131,12 @@ body {
             padding: 0 1em;
             list-style: none;
             font-family: "Barlow", sans-serif; }
-            .container #header #navbar .desktop-nav .desktop-links li #desk-contact {
+            .container #header #navbar .desktop-nav .desktop-links li .desk-contact {
               color: #23303e;
               text-transform: uppercase;
               font-family: "Fraunces", serif;
               padding: .5em 1em; }
-              .container #header #navbar .desktop-nav .desktop-links li #desk-contact::before {
+              .container #header #navbar .desktop-nav .desktop-links li .desk-contact::before {
                 position: absolute;
                 content: '';
                 background-color: white;
@@ -148,7 +148,7 @@ body {
                 border-radius: 20px;
                 transition: .2s;
                 box-shadow: inset 3px 3px 4px #ddda, inset -3px -3px 4px rgba(0, 0, 0, 0.274); }
-              .container #header #navbar .desktop-nav .desktop-links li #desk-contact:hover::before {
+              .container #header #navbar .desktop-nav .desktop-links li .desk-contact:hover::before {
                 opacity: 0; }
             .container #header #navbar .desktop-nav .desktop-links li a {
               color: white;

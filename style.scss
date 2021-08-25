@@ -132,7 +132,7 @@ body {
                                 text-decoration: none;
                             }
                             
-                            #mobile-contact {
+                            .mobile-contact {
                                 background-color: $yellow;
                                 padding: 1em;
                                 margin: 1em auto ;
@@ -171,7 +171,7 @@ body {
                         list-style: none;
                         font-family: $font-barlow;
                         // desktop contact link button
-                        #desk-contact {
+                        .desk-contact {
                             color: $very-dark-desaturated-blue;
                             text-transform: uppercase;
                             font-family: $font-fraunces;
