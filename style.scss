@@ -627,21 +627,17 @@ body {
         // end of mobile gallery 
         // social links
         .footer-logo {
-            margin: 2em auto;
+            margin: 3em auto 2em;
             // logo box shadow
             a {
                 display: inline-block;
                 // border: 1px solid red;
 
                 img {
-                    display: none;
                     border: none;
                     outline:none;
                     padding: .5em 1em;
-                    border-radius: 3px;
-                    // box-shadow: inset 3px 3px 4px #dddddd46,
-                    //             inset -3px -3px 4px #0000003a;
-                }
+                    border-radius: 3px;}
             }
             // end of logo box shadow
         }
