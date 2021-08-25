@@ -43,13 +43,13 @@ body {
             // hide mobile nav links on desktop
             // hide desktop nav links on mobile
             @media(min-width: 768px){
-                #mobile-nav {
+                .mobile-nav {
                     display: none;
                 }
                 height: 10vh;
             }
             @media(max-width: 768px){
-                #desktop-nav {
+                .desktop-nav {
                     display: none;
                 }
             }
@@ -66,9 +66,9 @@ body {
             align-items: center;
             padding: 0 1.5em;
             // mobile nav links- javascript display
-            #mobile-nav {
+            .mobile-nav {
                 overflow: hidden;
-                #toggle {
+                .toggle {
                     cursor: pointer;
                 }
                 // links hidden by default. Displayed on JS callback via .active class
@@ -160,7 +160,7 @@ body {
             // mobile nav links- javascript display
 
             // desktop navbar links
-            #desktop-nav {
+            .desktop-nav {
                 width: auto;
                 padding: 0 2em;
                 .desktop-links {
