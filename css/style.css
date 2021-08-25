@@ -231,7 +231,7 @@ body {
               .container #about .about-info .about-brand .card .card-details.card-details h2 {
                 font-size: 2em;
                 width: 90%; } }
-          .container #about .about-info .about-brand .card .card-details h2 {
+          .container #about .about-info .about-brand .card .card-details h1 {
             font-family: "Fraunces", serif;
             color: #23303e;
             font-size: 2em;
@@ -308,7 +308,7 @@ body {
           font-size: 1.5em;
           margin-bottom: 1em;
           font-weight: 900; }
-        .container #about .about-gallery .work .work-info p {
+        .container #about .about-gallery .work .work-info h2 {
           font-family: "Barlow", sans-serif;
           font-size: 1em;
           font-weight: 900; }
