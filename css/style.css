@@ -302,7 +302,7 @@ body {
         padding: .1em .5em;
         text-align: center;
         width: 50%; }
-        .container #about .about-gallery .work .work-info h2 {
+        .container #about .about-gallery .work .work-info h1 {
           text-transform: capitalize;
           font-family: "Fraunces", serif;
           font-size: 1.5em;
