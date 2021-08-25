@@ -408,10 +408,10 @@ body {
           font-family: "Fraunces", serif;
           padding: 1em;
           margin: 1em auto; }
-          .container #projects .client-grid .client .name p {
+          .container #projects .client-grid .client .name h2 {
             margin: .5em auto;
             font-weight: 900; }
-          .container #projects .client-grid .client .name span {
+          .container #projects .client-grid .client .name p {
             font-family: "Barlow", sans-serif;
             color: #a7abae;
             font-weight: 900; }
