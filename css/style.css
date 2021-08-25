@@ -445,11 +445,8 @@ body {
       margin: 3em auto 2em; }
       .container #contact .footer-logo a {
         display: inline-block; }
-        .container #contact .footer-logo a img {
-          border: none;
-          outline: none;
-          padding: .5em 1em;
-          border-radius: 3px; }
+        .container #contact .footer-logo a svg {
+          fill: #25564b; }
     .container #contact ul {
       display: flex;
       justify-content: space-around;

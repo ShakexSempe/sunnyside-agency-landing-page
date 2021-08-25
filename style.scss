@@ -633,11 +633,9 @@ body {
                 display: inline-block;
                 // border: 1px solid red;
 
-                img {
-                    border: none;
-                    outline:none;
-                    padding: .5em 1em;
-                    border-radius: 3px;}
+                svg {
+                    fill: $dark-desaturated-cyan-graphic-design-text;
+                }
             }
             // end of logo box shadow
         }
