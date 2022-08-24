@@ -34,7 +34,7 @@ body {
         left: -100vw;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(27, 99, 134, 0.2);
         transition: 0s;
     }
 
@@ -426,9 +426,6 @@ body {
                 cursor: pointer;
                 transition: .3s;
                 border-radius: 3px;
-                box-shadow: inset 3px 3px 4px rgba(221, 221, 221, 0.274),
-                                inset -3px -3px 4px rgba(0, 0, 0, 0.226);
-                
                 a {
                     text-transform: capitalize;
                     color: $dark-desaturated-cyan-graphic-design-text;
@@ -468,19 +465,6 @@ body {
                     outline: none;
                     color: $dark-desaturated-cyan-graphic-design-text;
                     position: relative;
-                    // social media cons box shadow
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 5px;
-                        opacity: .4;
-                        box-shadow: inset 2px 2px 4px #fffa,
-                                    inset -2px -2px 4px #000a;
-                    }
                     // social media cons box shadow
 
                     &:hover {
