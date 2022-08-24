@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 .header {
-  height: 7vh;
+  height: 9vh;
   width: 100%;
   position: fixed;
   top: 0;
@@ -30,7 +30,7 @@
   width: 100%;
 }
 @media (min-width: 820px) {
-  .header .navigation aside {
+  .header .navigation .hamburger {
     display: none;
   }
 }
@@ -113,11 +113,12 @@
   right: 5vw;
 }
 .header .navigation .desktop-links {
-  border: 2px solid blue;
+  width: 22rem;
 }
 .header .navigation .desktop-links ul {
   display: flex;
-  gap: 1rem;
+  justify-content: space-around;
+  gap: 2rem;
 }
 .header .navigation .desktop-links ul li {
   list-style: none;
@@ -126,6 +127,18 @@
   color: #fff;
   text-transform: capitalize;
   font-family: "Barlow", sans-serif;
+  text-decoration: none;
+}
+.header .navigation .desktop-links ul li:last-of-type a {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  color: #000;
+  font-family: "Fraunces", serif;
+}
+.header .navigation .desktop-links ul li:last-of-type a:hover {
+  background: #fffa;
+  color: #fff;
 }
 
 #hero {
@@ -167,9 +180,9 @@
 }
 @media (min-width: 768px) {
   #hero h1 {
-    margin-top: 20vh;
     font-size: 3.5rem;
     letter-spacing: 0.25em;
+    padding-top: 22vh;
   }
   #hero h1 span {
     display: inline-block;

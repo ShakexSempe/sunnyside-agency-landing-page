@@ -1,7 +1,7 @@
 @import 'variables';
 
 .header {
-    height: 7vh;
+    height: 9vh;
     width: 100%;
     position: fixed;
     top: 0;
@@ -37,7 +37,7 @@
     .navigation {
         // position: relative;
         @media (min-width: 820px) {
-            aside {display: none;}
+            .hamburger {display: none;}
         }
         @media (max-width: 820px) {
             .desktop-links { display: none;}
@@ -126,10 +126,12 @@
             }
         }
         .desktop-links {
-            border: 2px solid blue;
+            // border: 2px solid blue;
+            width: 22rem;
             ul {
                 display: flex;
-                gap: 1rem;
+                justify-content: space-around;
+                gap: 2rem;
 
                 li {
                     list-style: none;
@@ -137,6 +139,21 @@
                         color: #fff;
                         text-transform: capitalize;
                         font-family: $font-barlow;
+                        text-decoration: none;
+                    }
+                    &:last-of-type {
+                        a {
+                            background: #fff;
+                            border-radius: 1.5rem;
+                            padding: .5rem 1rem;
+                            color: #000;
+                            font-family: $font-title;
+
+                            &:hover {
+                                background: #fffa;
+                                color: #fff;
+                            }
+                        }
                     }
                 }
             }
