@@ -1,0 +1,66 @@
+@import 'variables';
+// hero
+#hero {
+    border: 2px solid green;
+    border: none;
+    background-image: url(../images/desktop/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-position-y: 100%;
+    background-position-x: center;
+    background-attachment: fixed;
+
+    @media (max-width: 768px) {
+        background-image: url(../images/mobile/image-header.jpg);
+        height: 80vh;
+        background-attachment: unset;
+        background-position: bottom;
+        padding: 0 5vw;
+    }
+
+    height: 100vh;
+    text-align: center;
+    h1 {
+        color: $white;
+        font-size: 2em;
+        padding-top: 20vh;
+        // margin-top: 20vh;
+        text-transform: uppercase;
+        font-family: $font-title;
+        letter-spacing: .2em;
+        // border: 2px solid red;
+        @media (max-width: 768px){
+            font-size: 2.25rem;
+            span {
+                display: block;
+                font-size: inherit;
+            }
+        }
+        @media (min-width: 768px) {
+            margin-top: 20vh;
+            font-size: 3.5rem;
+            letter-spacing: .25em;
+            span {
+                display: inline-block;
+                font-size: inherit;
+            }
+        }
+    }
+    .arrow {
+        margin: 0 auto;
+        // padding-top: 1vh;
+        transform: translateY(100%);
+        @media (max-width: 768px){
+            // padding-top: 5%;
+            transform: translateY(35%);
+        }
+        @media (max-width: 360px){
+            transform: scale(.6) translateY(-50%);
+        }
+        @media (min-width: 1034px){
+            // padding-top: 5%;
+            transform: translateY(125%);
+        }
+    }
+}
+// end of hero

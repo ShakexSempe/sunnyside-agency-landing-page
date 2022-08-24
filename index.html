@@ -11,53 +11,43 @@
 </head>
 <body>
   <div class="container">
-    <header id="header">
-      <!-- navbar -->
-      <nav id="navbar">
-        <!-- logo -->
-        <div class="logo">
-          <a href="#hero" aria-label="logo">
-            <img src="images/logo.svg" alt="logo">
-          </a>
-        </div>
-        <!-- end of logo -->
-        <!-- desktop nav links -->
-        <nav class="desktop-nav">
-          <ul class="desktop-links">
-            <li><a href="#about">About</a></li>
+    <!-- HEADER : LOGO + NAV LINKS-->
+    <header class="header" id="header">
+      <div class="logo">
+        <a href="#">
+          <img src="images/logo.svg" alt="SunnnySide Logo">
+        </a>
+      </div>
+      <div class="navigation">
+        <div class="hamburger">
+            <img src="images/icon-hamburger.svg" class="toggle" alt="toggle">
+            <aside class="aside-links">
+              <ul>
+                  <li><a href="#about">about</a></li>
+                  <li><a href="#services">services</a></li>
+                  <li><a href="#projects">projects</a></li>
+                  <li><a href="#contact">contact</a></li>
+                </ul>
+            </aside>
+          </div>
+        <div class="desktop-links">
+          <ul>
+            <li><a href="#home">home</a></li>
             <li><a href="#services">services</a></li>
             <li><a href="#projects">projects</a></li>
-            <li><a href="#contact" class="desk-contact">contact</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
-        </nav>
-        <!-- end of desktop nav links -->
-        <!-- mobile nav-links -->
-        <nav class="mobile-nav">
-          <div class="toggle">
-            <img src="images/icon-hamburger.svg" alt="toggle">
-          </div>
-          <div class="mobile-links ">
-            <ul>
-              <li><a href="#about">About</a></li>
-            <li><a href="#services">services</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#contact" class="mobile-contact">contact</a></li>
-            </ul>
-          </div>
-        </nav>
-        <!-- end of mobile nav-links -->
-      </nav>
-      <!-- end of navbar -->
-      
-      <!-- hero -->
-      <section id="hero">
-        <h1>We Are Creatives <!-- header background--> </h1>
-        <div class="arrow">
-          <img src="images/icon-arrow-down.svg" alt="arrow">
         </div>
-      </section>
-      <!-- end of hero -->
+      </div>
     </header>
+    <!-- hero -->
+    <div id="hero">
+      <h1>We Are <span>Creatives</span></h1>
+      <div class="arrow">
+        <img src="images/icon-arrow-down.svg" alt="arrow">
+      </div>
+    </div>
+    <!-- end of hero -->
     <!-- about section-->
     <main>
       <section id="about">
