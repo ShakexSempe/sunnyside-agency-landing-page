@@ -1,0 +1,212 @@
+@use './abstracts';
+
+// ABOUT SECTION
+#about {
+    .about-info {
+        // egg and cup
+        .about-brand {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+            // DESKTOP STYLE
+            @include abstracts.md {
+                text-align: left;
+                flex-direction: row;
+                // max-height: 80vh;
+
+                &:nth-child(even){
+                    flex-direction: row-reverse;
+                }
+
+            }
+
+            .card {
+                display: grid;
+                place-items: center;
+                flex-basis: 50%;
+                padding: 2rem .0;
+                @include abstracts.md {
+                    padding: 6rem;
+                }
+
+                .card-details {
+                    padding: 1em;
+                    @include abstracts.md {
+                            padding: 1.3em;
+                    }
+
+                    h2 {
+                        font-family: abstracts.$font-fraunces;
+                        color: abstracts.$very-dark-desaturated-blue;
+                        font-size: 2em;
+                        font-weight: 900;
+                        margin-bottom: .5em;
+                        max-width: 400px;
+                    }
+
+                    p {
+                        margin: 2em auto;
+                        color: abstracts.$dark-grayish-blue;
+                        font-weight: 600;
+                        font-family: abstracts.$font-barlow;
+                    }
+
+                    button {
+                        margin: 0 auto 2em;
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+                        text-transform: uppercase;
+                        font-family: abstracts.$font-fraunces;
+                        color: abstracts.$very-dark-desaturated-blue;
+                        position: relative;
+                        cursor: pointer;
+                        // COLORED UNDERLINE
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: -.1em;
+                            left: -.3em;
+                            width: 110%;
+                            height: .5em;
+                            opacity: .4;
+                            border-radius: 20px;
+                            z-index: -1;
+                            transition: .2s;
+                        }
+                        &.transform-button {
+                            &::after {background-color: abstracts.$yellow;}
+                        }
+                        &.card-button {
+                            &::after {background-color: abstracts.$soft-red}
+                        }
+                        &:hover {
+                            &::after {opacity: 1;}
+                        }
+
+                    }
+                }
+            }
+            
+            .about-img {
+                overflow: hidden;
+                flex-basis: 50%;
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                
+            }
+        }
+    }
+    // graphic design and photography section
+    .about-gallery {
+        .work {
+            flex-basis: 50%;
+            height: 50vh;
+            position: relative;
+            &.work1 {
+                color: abstracts.$dark-desaturated-cyan-graphic-design-text;
+            }
+            &.work2 {
+                color: abstracts.$dark-blue-photography-text;
+            }
+            .work-info {
+                position: absolute;
+                bottom: 1em;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                padding: .1em .5em;
+                text-align: center;
+                width: 50%;
+                
+            
+            h2 {
+                text-transform: capitalize;
+                font-family: abstracts.$font-fraunces;
+                font-size: 1.5em;
+                margin-bottom: 1em;
+                font-weight: 900;
+            }
+            h3 {
+                font-family: abstracts.$font-barlow;
+                font-size: 1em;
+                font-weight: 900;
+            }
+        }
+        }
+        @media (max-width: 768px){
+            display: block;
+            .work {
+                height: 80vh;
+                background-color: green;
+                .work-info {
+                    width: 100%;
+                    padding: 1em;
+                    margin: 1em auto;
+                    p {
+                        font-size: .9em;
+                    }
+                }
+                &.work1{
+                    background-image: url(../images/mobile/image-graphic-design.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: bottom;
+                }
+                &.work2{
+                    background-image: url(../images/mobile/image-photography.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+        }
+        @media (min-width: 768px){
+            height: 100vh;
+            display: flex;
+            .work {
+                height: 100%;
+                position: relative;
+                .work-info {
+                    width: 55%;
+                    position: absolute;
+                    bottom: 20%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    text-align: center;
+                    h2 {
+                        font-size: 2em;
+                        margin: 1em auto;
+                        
+                    }
+                    p {
+                        font-family: abstracts.$font-barlow;
+                    }
+                }
+                &.work1{
+                    background-image: url(../images/desktop/image-graphic-design.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    // color: abstracts.$dark-desaturated-cyan-graphic-design-text;
+                    
+                }
+                &.work2{
+                    background-image: url(../images/desktop/image-photography.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    // color: abstracts.$dark-blue-photography-text;
+                    
+                }
+            }
+        }
+
+        
+    }
+    // end of graphic design and photography section
+}
