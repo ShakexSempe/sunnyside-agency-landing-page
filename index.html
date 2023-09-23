@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
+
 <body>
+
   <div class="container">
     <!-- HEADER : LOGO + NAV LINKS-->
     <header class="header" id="header">
@@ -40,17 +42,31 @@
         </div>
       </div>
     </header>
-    <!-- hero -->
+
+    <!-- HERO -->
     <div id="hero">
+
+      <picture>
+        <source
+        media="(min-width: 500px)"
+        srcset="images/hero-desktop.jpg"
+        width="2880"
+        height="1600"
+        >
+        <img class="hero-image" src="images/hero-mobile.jpg" width="750" height="1076" alt="hero image">
+      </picture>
+
       <h1>We Are <span>Creatives</span></h1>
+
       <div class="arrow">
         <a href="#main">
           <img src="images/icon-arrow-down.svg" alt="arrow">
         </a>
       </div>
+
     </div>
-    <!-- end of hero -->
-    <!-- about section-->
+
+    <!-- MAIN SECTION -->
     <main id="main">
       <section id="about">
         <div class="about-info">

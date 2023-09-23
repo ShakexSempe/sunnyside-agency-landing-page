@@ -1,4 +1,4 @@
-@import 'variables';
+@use './abstracts';
 
 .header {
     height: 9vh;
@@ -7,7 +7,7 @@
     top: 0;
     background-color: transparent;
     background-color: rgba(135, 206, 235, 0.197);
-    background-color: $sunny-blue;
+    background-color: abstracts.$sunny-blue;
     // border: 1px solid yellow;
     // opacity: .1;
     display: flex;
@@ -18,7 +18,7 @@
 
     .logo {
         // border: 2px solid red;
-        background-color: $sunny-blue;
+        background-color: abstracts.$sunny-blue;
         overflow: hidden;
         border-radius: .25rem;
         padding: .25rem .25rem 0;
@@ -36,7 +36,7 @@
 
     .navigation {
         // position: relative;
-        @media (min-width: 820px) {
+        @media (min-width: 820.1px) {
             .hamburger {display: none;}
         }
         @media (max-width: 820px) {
@@ -72,7 +72,7 @@
                 left: 0;
                 width: 100%;
                 height: 5vh;
-                background-color: $sunny-blue;
+                background-color: abstracts.$sunny-blue;
             }
             &::before {
                 content: '';
@@ -104,16 +104,16 @@
                     a {
                         text-transform: capitalize;
                         text-decoration: none;
-                        color: $very-dark-grayish-blue;
+                        color: abstracts.$very-dark-grayish-blue;
                         font-weight: 700;
-                        font-family: $font-content;
+                        font-family: abstracts.$font-content;
                     }
                     &:last-child{
                         a {
-                        background-color: $yellow;
+                        background-color: abstracts.$yellow;
                         text-transform: uppercase;
                         color: #000;
-                        font-family: $font-title;
+                        font-family: abstracts.$font-title;
                         padding: 1rem 2rem;
                         border-radius: 2rem;
                         }
@@ -138,7 +138,7 @@
                     a {
                         color: #fff;
                         text-transform: capitalize;
-                        font-family: $font-barlow;
+                        font-family: abstracts.$font-barlow;
                         text-decoration: none;
                     }
                     &:last-of-type {
@@ -147,7 +147,7 @@
                             border-radius: 1.5rem;
                             padding: .5rem 1rem;
                             color: #000;
-                            font-family: $font-title;
+                            font-family: abstracts.$font-title;
 
                             &:hover {
                                 background: #fffa;

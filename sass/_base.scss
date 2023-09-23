@@ -1,0 +1,491 @@
+@use './abstracts';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5vh;
+}
+
+body {
+    max-width: 100%;
+
+    .attribution {
+        text-align: center;
+        padding: .1em 0;
+
+        a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    // OVERLAY
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100vw;
+        width: 100%;
+        height: 100%;
+        background: rgba(27, 99, 134, 0.2);
+        transition: 0s;
+    }
+
+    &.overlay {
+        &::after {
+            left: 0;
+        }
+    }
+// end of header
+// about section
+    #about {
+        width: 100%;
+        @media (max-width:768px){
+            .about-info {
+                .about-brand {
+                    flex-direction: column-reverse;
+                    text-align: center;
+                    .card {
+                        .card-details {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .about-info {
+            // egg and cup page
+            
+            .about-brand {
+                display: flex;
+
+                @media (min-width:768px){
+                    &:nth-child(even){
+                        flex-direction: row-reverse;
+                    }
+                }
+                
+
+                .card {
+                    // border: 1px solid red;
+                    padding: 6em;
+                    flex-basis: 50%;
+                    text-align: left;
+                    @media (max-width: 768px){
+                        padding: .5em;
+                    }
+
+                    .card-details {
+                        // border: 1px solid green;
+                        padding: 1em;
+                        @media (min-width:768px){
+                            padding: 1.3em;
+                            &.card-details{
+                                h2 {
+                                    font-size: 2em;
+                                    width: 90%;
+                                }
+                            }
+                        }
+                        h2 {
+                            font-family: abstracts.$font-fraunces;
+                            color: abstracts.$very-dark-desaturated-blue;
+                            font-size: 2em;
+                            font-weight: 900;
+                            margin-bottom: .5em;
+                        }
+                        p {
+                            margin: 2em auto;
+                            color: abstracts.$dark-grayish-blue;
+                            font-weight: 600;
+                            // width: 95%;
+                            font-family: abstracts.$font-barlow;
+                        }
+                        button {
+                            margin: 0 auto 2em;
+                            border: none;
+                            outline: none;
+                            background-color: transparent;
+                            text-transform: uppercase;
+                            font-family: abstracts.$font-fraunces;
+                            color: abstracts.$very-dark-desaturated-blue;
+                            position: relative;
+                            cursor: pointer;
+                            // colored underline
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                bottom: -.1em;
+                                left: -.3em;
+                                width: 110%;
+                                height: .5em;
+                                opacity: .4;
+                                border-radius: 20px;
+                                z-index: -1;
+                                transition: .2s;
+                            }
+                            &.transform-button {
+                                &::after {background-color: abstracts.$yellow;}
+                            }
+                            &.card-button {
+                                &::after {background-color: abstracts.$soft-red}
+                            }
+                            &:hover {
+                                &::after {opacity: 1;}
+                                
+                            }
+                            // end of colored underline
+
+                        }
+                    }
+                }
+                .about-img {
+                    overflow: hidden;
+                    flex-basis: 50%;
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    // border: 1px solid blue;
+                    @media (max-width: 767px){
+                        .transform-desk {
+                            display: none;
+                        }
+                        .stand-desk {
+                            display: none;
+                        }
+                        
+                    }
+                    @media (min-width: 768px){
+                        .transform-mobile {
+                            display: none;
+                        }
+                        .stand-mobile {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        // graphic design and photography section
+        .about-gallery {
+            .work {
+                flex-basis: 50%;
+                height: 50vh;
+                position: relative;
+                &.work1 {
+                    color: abstracts.$dark-desaturated-cyan-graphic-design-text;
+                }
+                &.work2 {
+                    color: abstracts.$dark-blue-photography-text;
+                }
+                .work-info {
+                    position: absolute;
+                    bottom: 1em;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 100%;
+                    padding: .1em .5em;
+                    text-align: center;
+                    width: 50%;
+                    
+                
+                h2 {
+                    text-transform: capitalize;
+                    font-family: abstracts.$font-fraunces;
+                    font-size: 1.5em;
+                    margin-bottom: 1em;
+                    font-weight: 900;
+                }
+                h3 {
+                    font-family: abstracts.$font-barlow;
+                    font-size: 1em;
+                    font-weight: 900;
+                }
+            }
+            }
+            @media (max-width: 768px){
+                display: block;
+                .work {
+                    height: 80vh;
+                    background-color: green;
+                    .work-info {
+                        width: 100%;
+                        padding: 1em;
+                        margin: 1em auto;
+                        p {
+                            font-size: .9em;
+                        }
+                    }
+                    &.work1{
+                        background-image: url(../images/mobile/image-graphic-design.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: bottom;
+                    }
+                    &.work2{
+                        background-image: url(../images/mobile/image-photography.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+            }
+            @media (min-width: 768px){
+                height: 100vh;
+                display: flex;
+                .work {
+                    height: 100%;
+                    position: relative;
+                    .work-info {
+                        width: 55%;
+                        position: absolute;
+                        bottom: 20%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        text-align: center;
+                        h2 {
+                            font-size: 2em;
+                            margin: 1em auto;
+                            
+                        }
+                        p {
+                            font-family: abstracts.$font-barlow;
+                        }
+                    }
+                    &.work1{
+                        background-image: url(../images/desktop/image-graphic-design.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        // color: abstracts.$dark-desaturated-cyan-graphic-design-text;
+                        
+                    }
+                    &.work2{
+                        background-image: url(../images/desktop/image-photography.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        // color: abstracts.$dark-blue-photography-text;
+                        
+                    }
+                }
+            }
+
+            
+        }
+        // end of graphic design and photography section
+    }
+// end of about section
+// testimonials section
+    #projects {
+        background-color: #f4f4f4;
+        padding: 2em 1em;
+        @media (min-width: 1024px) {
+            padding: 10vh 0;
+        }
+        height: 100%;
+        header {
+            h1 {
+                text-align: center;
+                color: abstracts.$dark-grayish-blue;
+                letter-spacing: .25em;
+                font-weight: 900;
+                text-transform: uppercase;
+                padding-top: 2em;
+                margin: 1em auto .5em;
+            }
+        }
+        .client-grid {
+            display: grid;
+            margin: 5em auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr;
+            }
+            .client {
+                text-align: center;
+                font-family: abstracts.$font-barlow;
+
+                figure {
+                    height: 7em;
+                    width: 7em;
+                    border-radius: 50%;
+                    border: none;
+                    overflow: hidden;
+                    margin: 2em auto;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+                .review {
+                    width: 90%;
+                    font-size: 1em;
+                    padding: 2em;
+                    color: abstracts.$very-dark-grayish-blue;
+                    font-weight: 599;
+                    @media(max-width: 768px){
+                        padding: .3em;
+                        width: 100%;
+                    }
+                }
+                .name {
+                    font-family: abstracts.$font-fraunces;
+                    padding: 1em;
+                    margin: 1em auto;
+                    h2 {
+                        margin: .5em auto;
+                        font-weight: 900;
+                    }
+                    p {
+                        font-family: abstracts.$font-barlow;
+                        color: abstracts.$grayish-blue;
+                        font-weight: 900;
+                    }
+                }
+
+            }
+        }
+    }
+// end of testimonials
+// contact / footer
+    #contact {
+        width: 100%;
+        padding-bottom: .5em;
+        text-align: center;
+        background-color: abstracts.$dark-moderate-cyan-footer;
+        color: abstracts.$dark-desaturated-cyan-graphic-design-text;
+        // desktop gallery
+        @media (min-width: 768px) {
+            .mobile-gallery { display: none}
+            .desktop-gallery {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                figure {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        // end of desktop gallery
+        // mobile gallery 
+        @media (max-width: 768px) {
+            .desktop-gallery {display: none}
+            .mobile-gallery { 
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                figure {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        // end of mobile gallery 
+        // social links
+        .footer-logo {
+            margin: 3em auto 2em;
+            // logo box shadow
+            a {
+                display: inline-block;
+                // border: 1px solid red;
+
+                svg {
+                    fill: abstracts.$dark-desaturated-cyan-graphic-design-text;
+                }
+            }
+            // end of logo box shadow
+        }
+        // footer navigation links
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: .5em auto;
+            @media (min-width: 1000px){
+                width: 25%;
+                justify-content: space-between;
+
+            }
+
+            li {
+                padding: .3em 1em ;
+                list-style: none;
+                font-weight: 600;
+                cursor: pointer;
+                transition: .3s;
+                border-radius: 3px;
+                a {
+                    text-transform: capitalize;
+                    color: abstracts.$dark-desaturated-cyan-graphic-design-text;
+                    text-decoration: none;
+                    
+                }
+                // link color on hover
+                &:hover {
+                    transform: scale(1.1);
+                    a {
+                        color: abstracts.$white;
+                    } 
+                }
+                // end of link color on hover
+
+            }
+        }
+        // end of footer navigation links
+
+        // social media links
+        .links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2em auto;
+            padding: 1em;
+            cursor: pointer;
+            width: 70%;
+            @media (min-width: 768px) {
+                width: 20%;
+            }
+                i {
+                    padding: .5em;
+                    transition: .3s;
+                    margin: 0 auto;
+                    border: none;
+                    outline: none;
+                    color: abstracts.$dark-desaturated-cyan-graphic-design-text;
+                    position: relative;
+                    // social media cons box shadow
+
+                    &:hover {
+                            color: abstracts.$white;
+                            transform: scale(1.2);
+                            &::after { opacity: 1;}
+                    }
+                }
+            }
+        
+        // end of social media links
+
+    }
+// end of contact / footer
+}
+
+
