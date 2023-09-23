@@ -429,17 +429,15 @@ img {
 }
 
 .header {
-  height: 9vh;
-  width: 100%;
   position: fixed;
   top: 0;
-  background-color: transparent;
-  background-color: rgba(135, 206, 235, 0.197);
+  height: 10vh;
+  width: 100%;
   background-color: #3ebfff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5vw;
+  padding: 1rem 5vw 0;
   z-index: 5;
 }
 .header .logo {
