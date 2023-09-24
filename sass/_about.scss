@@ -62,7 +62,7 @@
                         color: abstracts.$very-dark-desaturated-blue;
                         position: relative;
                         // DESKTOP BUTTON
-                        @include abstracts.md {
+                        @include abstracts.sm {
                             cursor: pointer;
                         }
                         // COLORED UNDERLINE
