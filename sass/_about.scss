@@ -12,7 +12,6 @@
             @include abstracts.md {
                 text-align: left;
                 flex-direction: row;
-                // max-height: 80vh;
 
                 &:nth-child(even){
                     flex-direction: row-reverse;
@@ -25,27 +24,29 @@
                 place-items: center;
                 flex-basis: 50%;
                 padding: 2rem .0;
-                @include abstracts.md {
-                    padding: 6rem;
-                }
 
                 .card-details {
-                    padding: 1em;
-                    @include abstracts.md {
+                    padding: 1em 1.5rem;
+                    @include abstracts.xlg {
                             padding: 1.3em;
+                            padding: 5rem 7rem;
                     }
 
                     h2 {
                         font-family: abstracts.$font-fraunces;
                         color: abstracts.$very-dark-desaturated-blue;
                         font-size: 2em;
+                        font-size: clamp(1.8em, 4vw, 2em);
                         font-weight: 900;
-                        margin-bottom: .5em;
+                        margin: .5rem auto;
                         max-width: 400px;
+                        @include abstracts.md {
+                            margin: .5rem 0;
+                    }
                     }
 
                     p {
-                        margin: 2em auto;
+                        margin: 2em 0;
                         color: abstracts.$dark-grayish-blue;
                         font-weight: 600;
                         font-family: abstracts.$font-barlow;
@@ -53,14 +54,17 @@
 
                     button {
                         margin: 0 auto 2em;
+                        font-size: 1rem;
                         border: none;
-                        outline: none;
                         background-color: transparent;
                         text-transform: uppercase;
                         font-family: abstracts.$font-fraunces;
                         color: abstracts.$very-dark-desaturated-blue;
                         position: relative;
-                        cursor: pointer;
+                        // DESKTOP BUTTON
+                        @include abstracts.md {
+                            cursor: pointer;
+                        }
                         // COLORED UNDERLINE
                         &::after {
                             content: '';
@@ -91,10 +95,10 @@
             .about-img {
                 overflow: hidden;
                 flex-basis: 50%;
-                
                 img {
                     width: 100%;
                     height: 100%;
+                    max-height: 600px;
                     object-fit: cover;
                 }
                 

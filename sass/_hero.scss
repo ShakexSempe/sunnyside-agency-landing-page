@@ -7,6 +7,10 @@
     position: relative;
     text-align: center;
 
+    @include abstracts.md {
+        height: 80vh;
+    }
+
 
     .hero-image {
         position: absolute;
