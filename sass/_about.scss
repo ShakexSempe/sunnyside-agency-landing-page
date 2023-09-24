@@ -105,28 +105,59 @@
             }
         }
     }
+    
     // graphic design and photography section
     .about-gallery {
+        @include abstracts.md {
+            height: 60vh;
+            display: flex;
+        }
+
         .work {
             flex-basis: 50%;
-            height: 50vh;
+            height: 80vh;
             position: relative;
+
+            @include abstracts.md {
+                position: relative;
+                height: auto;
+            }
             &.work1 {
                 color: abstracts.$dark-desaturated-cyan-graphic-design-text;
             }
             &.work2 {
                 color: abstracts.$dark-blue-photography-text;
             }
+
+
+            .work-image {
+                position: absolute;
+                inset: 0;
+                height: 100%;
+                width: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                    max-height: 600px;
+                }
+            }
+
             .work-info {
                 position: absolute;
                 bottom: 1em;
                 left: 50%;
                 transform: translateX(-50%);
                 width: 100%;
-                padding: .1em .5em;
                 text-align: center;
                 width: 50%;
-                
+                width: 100%;
+                padding: 1em 1.25em;
+                @include abstracts.md {
+                    padding: 1em 1.5em;
+                }
             
             h2 {
                 text-transform: capitalize;
@@ -135,46 +166,19 @@
                 margin-bottom: 1em;
                 font-weight: 900;
             }
-            h3 {
+            p {
                 font-family: abstracts.$font-barlow;
                 font-size: 1em;
+                font-size: clamp(.85rem, 1vw, 1em);
                 font-weight: 900;
             }
         }
         }
-        @media (max-width: 768px){
-            display: block;
-            .work {
-                height: 80vh;
-                background-color: green;
-                .work-info {
-                    width: 100%;
-                    padding: 1em;
-                    margin: 1em auto;
-                    p {
-                        font-size: .9em;
-                    }
-                }
-                &.work1{
-                    background-image: url(../images/mobile/image-graphic-design.jpg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: bottom;
-                }
-                &.work2{
-                    background-image: url(../images/mobile/image-photography.jpg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
-            }
-        }
+
         @media (min-width: 768px){
-            height: 100vh;
-            display: flex;
+            
             .work {
-                height: 100%;
-                position: relative;
+                
                 .work-info {
                     width: 55%;
                     position: absolute;
@@ -190,22 +194,6 @@
                     p {
                         font-family: abstracts.$font-barlow;
                     }
-                }
-                &.work1{
-                    background-image: url(../images/desktop/image-graphic-design.jpg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    // color: abstracts.$dark-desaturated-cyan-graphic-design-text;
-                    
-                }
-                &.work2{
-                    background-image: url(../images/desktop/image-photography.jpg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    // color: abstracts.$dark-blue-photography-text;
-                    
                 }
             }
         }

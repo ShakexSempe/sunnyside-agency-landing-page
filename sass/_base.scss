@@ -17,10 +17,11 @@ body {
 
     .attribution {
         text-align: center;
-        padding: .1em 0;
+        padding: 1em 0;
 
         a {
             color: hsl(228, 45%, 44%);
+            line-height: 1.6;
         }
     }
 }
@@ -57,10 +58,9 @@ img {
     #projects {
         background-color: #f4f4f4;
         padding: 2em 1em;
-        @media (min-width: 1024px) {
+        @include abstracts.md  {
             padding: 10vh 0;
         }
-        height: 100%;
         header {
             h1 {
                 text-align: center;
@@ -70,11 +70,12 @@ img {
                 text-transform: uppercase;
                 padding-top: 2em;
                 margin: 1em auto .5em;
+                font-size: 1rem;
             }
         }
         .client-grid {
             display: grid;
-            margin: 5em auto;
+            margin: 1em auto;
             grid-template-columns: 1fr 1fr 1fr;
             @media (max-width: 768px) {
                 grid-template-columns: 1fr;

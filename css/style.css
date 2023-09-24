@@ -94,10 +94,22 @@
   max-height: 600px;
   object-fit: cover;
 }
+@media (min-width: 768px) {
+  #about .about-gallery {
+    height: 60vh;
+    display: flex;
+  }
+}
 #about .about-gallery .work {
   flex-basis: 50%;
-  height: 50vh;
+  height: 80vh;
   position: relative;
+}
+@media (min-width: 768px) {
+  #about .about-gallery .work {
+    position: relative;
+    height: auto;
+  }
 }
 #about .about-gallery .work.work1 {
   color: #25564b;
@@ -105,15 +117,34 @@
 #about .about-gallery .work.work2 {
   color: #19536b;
 }
+#about .about-gallery .work .work-image {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+}
+#about .about-gallery .work .work-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  max-height: 600px;
+}
 #about .about-gallery .work .work-info {
   position: absolute;
   bottom: 1em;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  padding: 0.1em 0.5em;
   text-align: center;
   width: 50%;
+  width: 100%;
+  padding: 1em 1.25em;
+}
+@media (min-width: 768px) {
+  #about .about-gallery .work .work-info {
+    padding: 1em 1.5em;
+  }
 }
 #about .about-gallery .work .work-info h2 {
   text-transform: capitalize;
@@ -122,49 +153,13 @@
   margin-bottom: 1em;
   font-weight: 900;
 }
-#about .about-gallery .work .work-info h3 {
+#about .about-gallery .work .work-info p {
   font-family: "Barlow", sans-serif;
   font-size: 1em;
+  font-size: clamp(.85rem, 1vw, 1em);
   font-weight: 900;
 }
-@media (max-width: 768px) {
-  #about .about-gallery {
-    display: block;
-  }
-  #about .about-gallery .work {
-    height: 80vh;
-    background-color: green;
-  }
-  #about .about-gallery .work .work-info {
-    width: 100%;
-    padding: 1em;
-    margin: 1em auto;
-  }
-  #about .about-gallery .work .work-info p {
-    font-size: 0.9em;
-  }
-  #about .about-gallery .work.work1 {
-    background-image: url(../images/mobile/image-graphic-design.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-  }
-  #about .about-gallery .work.work2 {
-    background-image: url(../images/mobile/image-photography.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
 @media (min-width: 768px) {
-  #about .about-gallery {
-    height: 100vh;
-    display: flex;
-  }
-  #about .about-gallery .work {
-    height: 100%;
-    position: relative;
-  }
   #about .about-gallery .work .work-info {
     width: 55%;
     position: absolute;
@@ -179,18 +174,6 @@
   }
   #about .about-gallery .work .work-info p {
     font-family: "Barlow", sans-serif;
-  }
-  #about .about-gallery .work.work1 {
-    background-image: url(../images/desktop/image-graphic-design.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  #about .about-gallery .work.work2 {
-    background-image: url(../images/desktop/image-photography.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 
@@ -211,10 +194,11 @@ body {
 }
 body .attribution {
   text-align: center;
-  padding: 0.1em 0;
+  padding: 1em 0;
 }
 body .attribution a {
   color: #3e52a3;
+  line-height: 1.6;
 }
 
 img {
@@ -242,9 +226,8 @@ img {
 .container #projects {
   background-color: #f4f4f4;
   padding: 2em 1em;
-  height: 100%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .container #projects {
     padding: 10vh 0;
   }
@@ -257,10 +240,11 @@ img {
   text-transform: uppercase;
   padding-top: 2em;
   margin: 1em auto 0.5em;
+  font-size: 1rem;
 }
 .container #projects .client-grid {
   display: grid;
-  margin: 5em auto;
+  margin: 1em auto;
   grid-template-columns: 1fr 1fr 1fr;
 }
 @media (max-width: 768px) {
