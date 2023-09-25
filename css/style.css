@@ -102,7 +102,7 @@
 }
 #about .about-gallery .work {
   flex-basis: 50%;
-  height: 80vh;
+  height: 85vh;
   position: relative;
 }
 @media (min-width: 768px) {
