@@ -1,0 +1,73 @@
+@use './abstracts';
+
+// TESTIMONIALS
+#projects {
+    background-color: #f4f4f4;
+    padding: 2em 1em;
+    @include abstracts.md  {
+        padding: 10vh 0;
+    }
+    header {
+        h1 {
+            text-align: center;
+            color: abstracts.$dark-grayish-blue;
+            letter-spacing: .25em;
+            font-weight: 900;
+            text-transform: uppercase;
+            padding-top: 2em;
+            margin: 1em auto .5em;
+            font-size: 1rem;
+        }
+    }
+    .client-grid {
+        display: grid;
+        margin: 1em auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+        .client {
+            text-align: center;
+            font-family: abstracts.$font-barlow;
+
+            figure {
+                height: 7em;
+                width: 7em;
+                border-radius: 50%;
+                border: none;
+                overflow: hidden;
+                margin: 2em auto;
+
+                img {
+                    width: 100%;
+                }
+            }
+            .review {
+                width: 90%;
+                font-size: 1em;
+                padding: 2em;
+                color: abstracts.$very-dark-grayish-blue;
+                font-weight: 599;
+                @media(max-width: 768px){
+                    padding: .3em;
+                    width: 100%;
+                }
+            }
+            .name {
+                font-family: abstracts.$font-fraunces;
+                padding: 1em;
+                margin: 1em auto;
+                h2 {
+                    margin: .5em auto;
+                    font-weight: 900;
+                }
+                p {
+                    font-family: abstracts.$font-barlow;
+                    color: abstracts.$grayish-blue;
+                    font-weight: 900;
+                }
+            }
+
+        }
+    }
+}

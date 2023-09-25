@@ -186,7 +186,7 @@
 html {
   font-size: 18px;
   scroll-behavior: smooth;
-  scroll-padding-top: 5vh;
+  scroll-padding-top: 10vh;
 }
 
 body {
@@ -222,77 +222,6 @@ img {
 }
 .container.overlay::after {
   left: 0;
-}
-.container #projects {
-  background-color: #f4f4f4;
-  padding: 2em 1em;
-}
-@media (min-width: 768px) {
-  .container #projects {
-    padding: 10vh 0;
-  }
-}
-.container #projects header h1 {
-  text-align: center;
-  color: #818498;
-  letter-spacing: 0.25em;
-  font-weight: 900;
-  text-transform: uppercase;
-  padding-top: 2em;
-  margin: 1em auto 0.5em;
-  font-size: 1rem;
-}
-.container #projects .client-grid {
-  display: grid;
-  margin: 1em auto;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-@media (max-width: 768px) {
-  .container #projects .client-grid {
-    grid-template-columns: 1fr;
-  }
-}
-.container #projects .client-grid .client {
-  text-align: center;
-  font-family: "Barlow", sans-serif;
-}
-.container #projects .client-grid .client figure {
-  height: 7em;
-  width: 7em;
-  border-radius: 50%;
-  border: none;
-  overflow: hidden;
-  margin: 2em auto;
-}
-.container #projects .client-grid .client figure img {
-  width: 100%;
-}
-.container #projects .client-grid .client .review {
-  width: 90%;
-  font-size: 1em;
-  padding: 2em;
-  color: #5a636c;
-  font-weight: 599;
-}
-@media (max-width: 768px) {
-  .container #projects .client-grid .client .review {
-    padding: 0.3em;
-    width: 100%;
-  }
-}
-.container #projects .client-grid .client .name {
-  font-family: "Fraunces", serif;
-  padding: 1em;
-  margin: 1em auto;
-}
-.container #projects .client-grid .client .name h2 {
-  margin: 0.5em auto;
-  font-weight: 900;
-}
-.container #projects .client-grid .client .name p {
-  font-family: "Barlow", sans-serif;
-  color: #a7abae;
-  font-weight: 900;
 }
 .container #contact {
   width: 100%;
@@ -561,6 +490,78 @@ img {
 }
 #hero .arrow:hover {
   transform: translateY(1rem);
+}
+
+#projects {
+  background-color: #f4f4f4;
+  padding: 2em 1em;
+}
+@media (min-width: 768px) {
+  #projects {
+    padding: 10vh 0;
+  }
+}
+#projects header h1 {
+  text-align: center;
+  color: #818498;
+  letter-spacing: 0.25em;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-top: 2em;
+  margin: 1em auto 0.5em;
+  font-size: 1rem;
+}
+#projects .client-grid {
+  display: grid;
+  margin: 1em auto;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 768px) {
+  #projects .client-grid {
+    grid-template-columns: 1fr;
+  }
+}
+#projects .client-grid .client {
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+}
+#projects .client-grid .client figure {
+  height: 7em;
+  width: 7em;
+  border-radius: 50%;
+  border: none;
+  overflow: hidden;
+  margin: 2em auto;
+}
+#projects .client-grid .client figure img {
+  width: 100%;
+}
+#projects .client-grid .client .review {
+  width: 90%;
+  font-size: 1em;
+  padding: 2em;
+  color: #5a636c;
+  font-weight: 599;
+}
+@media (max-width: 768px) {
+  #projects .client-grid .client .review {
+    padding: 0.3em;
+    width: 100%;
+  }
+}
+#projects .client-grid .client .name {
+  font-family: "Fraunces", serif;
+  padding: 1em;
+  margin: 1em auto;
+}
+#projects .client-grid .client .name h2 {
+  margin: 0.5em auto;
+  font-weight: 900;
+}
+#projects .client-grid .client .name p {
+  font-family: "Barlow", sans-serif;
+  color: #a7abae;
+  font-weight: 900;
 }
 
 /*# sourceMappingURL=style.css.map */
