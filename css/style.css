@@ -128,7 +128,6 @@
   width: 100%;
   object-fit: cover;
   object-position: top;
-  max-height: 600px;
 }
 #about .about-gallery .work .work-info {
   position: absolute;
@@ -492,15 +491,15 @@ img {
 }
 
 #projects {
-  background-color: #f4f4f4;
-  padding: 2em 1em;
+  background-color: #fafafa;
+  padding: 5vh 5vw;
 }
 @media (min-width: 768px) {
   #projects {
-    padding: 10vh 0;
+    padding: 10vh 5vw;
   }
 }
-#projects header h1 {
+#projects .grid-title {
   text-align: center;
   color: #818498;
   letter-spacing: 0.25em;
@@ -510,57 +509,55 @@ img {
   margin: 1em auto 0.5em;
   font-size: 1rem;
 }
-#projects .client-grid {
+#projects .grid-container {
   display: grid;
-  margin: 1em auto;
-  grid-template-columns: 1fr 1fr 1fr;
+  margin: 4em auto;
+  gap: 4em;
 }
-@media (max-width: 768px) {
-  #projects .client-grid {
-    grid-template-columns: 1fr;
+@media (min-width: 768px) {
+  #projects .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
   }
 }
-#projects .client-grid .client {
+#projects .grid-container .grid-item {
   text-align: center;
   font-family: "Barlow", sans-serif;
+  display: grid;
+  place-items: center;
+  gap: 2rem;
 }
-#projects .client-grid .client figure {
-  height: 7em;
-  width: 7em;
+@media (min-width: 768px) {
+  #projects .grid-container .grid-item {
+    gap: 4rem;
+  }
+}
+#projects .grid-container .grid-item figure {
+  height: 5em;
+  width: 5em;
   border-radius: 50%;
   border: none;
   overflow: hidden;
-  margin: 2em auto;
 }
-#projects .client-grid .client figure img {
-  width: 100%;
+#projects .grid-container .grid-item figure img {
+  object-fit: cover;
 }
-#projects .client-grid .client .review {
-  width: 90%;
+#projects .grid-container .grid-item .review {
   font-size: 1em;
-  padding: 2em;
   color: #5a636c;
-  font-weight: 599;
+  font-weight: 600;
 }
-@media (max-width: 768px) {
-  #projects .client-grid .client .review {
-    padding: 0.3em;
-    width: 100%;
-  }
-}
-#projects .client-grid .client .name {
+#projects .grid-container .grid-item .name {
   font-family: "Fraunces", serif;
-  padding: 1em;
-  margin: 1em auto;
 }
-#projects .client-grid .client .name h2 {
-  margin: 0.5em auto;
+#projects .grid-container .grid-item .name h3 {
   font-weight: 900;
+  margin-bottom: 0.5em;
 }
-#projects .client-grid .client .name p {
+#projects .grid-container .grid-item .name p {
   font-family: "Barlow", sans-serif;
   color: #a7abae;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
