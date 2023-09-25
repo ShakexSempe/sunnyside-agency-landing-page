@@ -96,7 +96,7 @@
 }
 @media (min-width: 768px) {
   #about .about-gallery {
-    height: 60vh;
+    height: 70vh;
     display: flex;
   }
 }
@@ -107,8 +107,7 @@
 }
 @media (min-width: 768px) {
   #about .about-gallery .work {
-    position: relative;
-    height: auto;
+    height: 100%;
   }
 }
 #about .about-gallery .work.work1 {
@@ -134,45 +133,35 @@
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
   text-align: center;
   width: 100%;
+  max-width: 400px;
   padding: 1em 1.25em;
 }
 @media (min-width: 768px) {
   #about .about-gallery .work .work-info {
-    padding: 1em 1.5em;
+    bottom: 4em;
   }
 }
 #about .about-gallery .work .work-info h2 {
   text-transform: capitalize;
   font-family: "Fraunces", serif;
-  font-size: 1.5em;
+  font-size: 2em;
   margin-bottom: 1em;
   font-weight: 900;
+}
+@media (min-width: 768px) {
+  #about .about-gallery .work .work-info h2 {
+    font-size: 2em;
+    margin: 0 auto 1em;
+  }
 }
 #about .about-gallery .work .work-info p {
   font-family: "Barlow", sans-serif;
   font-size: 1em;
   font-size: clamp(.85rem, 1vw, 1em);
   font-weight: 600;
-}
-@media (min-width: 768px) {
-  #about .about-gallery .work .work-info {
-    width: 55%;
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-  }
-  #about .about-gallery .work .work-info h2 {
-    font-size: 2em;
-    margin: 1em auto;
-  }
-  #about .about-gallery .work .work-info p {
-    font-family: "Barlow", sans-serif;
-  }
+  line-height: 1.6;
 }
 
 * {

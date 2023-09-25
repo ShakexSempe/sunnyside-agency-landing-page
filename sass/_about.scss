@@ -109,7 +109,7 @@
     // graphic design and photography section
     .about-gallery {
         @include abstracts.md {
-            height: 60vh;
+            height: 70vh;
             display: flex;
         }
 
@@ -117,10 +117,8 @@
             flex-basis: 50%;
             height: 85vh;
             position: relative;
-
             @include abstracts.md {
-                position: relative;
-                height: auto;
+                height: 100%;
             }
             &.work1 {
                 color: abstracts.$dark-desaturated-cyan-graphic-design-text;
@@ -149,51 +147,36 @@
                 bottom: 2rem;
                 left: 50%;
                 transform: translateX(-50%);
-                width: 100%;
                 text-align: center;
                 width: 100%;
+                max-width: 400px;
                 padding: 1em 1.25em;
+                // DESKTOP WORK-INFO
                 @include abstracts.md {
-                    padding: 1em 1.5em;
+                    bottom: 4em;
                 }
             
             h2 {
                 text-transform: capitalize;
                 font-family: abstracts.$font-fraunces;
-                font-size: 1.5em;
+                font-size: 2em;
+                // font-size: clamp(1.5em, 1.5vw, 2em);
                 margin-bottom: 1em;
                 font-weight: 900;
+                @include abstracts.md {
+                    font-size: 2em;
+                    margin: 0 auto 1em;
+                    
+                }
             }
             p {
                 font-family: abstracts.$font-barlow;
                 font-size: 1em;
                 font-size: clamp(.85rem, 1vw, 1em);
                 font-weight: 600;
+                line-height: 1.6;
             }
         }
-        }
-
-        @media (min-width: 768px){
-            
-            .work {
-                
-                .work-info {
-                    width: 55%;
-                    position: absolute;
-                    bottom: 20%;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    text-align: center;
-                    h2 {
-                        font-size: 2em;
-                        margin: 1em auto;
-                        
-                    }
-                    p {
-                        font-family: abstracts.$font-barlow;
-                    }
-                }
-            }
         }
 
         
