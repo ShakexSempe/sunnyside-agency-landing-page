@@ -10,6 +10,7 @@ html {
     font-size: 18px;
     scroll-behavior: smooth;
     scroll-padding-top: 10vh;
+    font-family: abstracts.$font-content;
 }
 
 body {
@@ -67,40 +68,12 @@ p {
         text-align: center;
         background-color: abstracts.$dark-moderate-cyan-footer;
         color: abstracts.$dark-desaturated-cyan-graphic-design-text;
-        // desktop gallery
-        @media (min-width: 768px) {
-            .mobile-gallery { display: none}
-            .desktop-gallery {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                figure {
-                    img {
-                        width: 100%;
-                    }
-                }
-            }
-        }
-        // end of desktop gallery
-        // mobile gallery 
-        @media (max-width: 768px) {
-            .desktop-gallery {display: none}
-            .mobile-gallery { 
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                figure {
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-            }
-        }
-        // end of mobile gallery 
+        
         // social links
         .footer-logo {
             // margin: 3em auto 2em;
             // logo box shadow
-            padding: 2rem 0;
+            padding: 10vh 0 1rem;
             a {
                 display: inline-block;
                 // border: 1px solid red;
@@ -126,7 +99,7 @@ p {
             li {
                 padding: .3em 1em ;
                 list-style: none;
-                font-weight: 600;
+                font-weight: 500;
                 cursor: pointer;
                 transition: .3s;
                 border-radius: 3px;
@@ -134,7 +107,6 @@ p {
                     text-transform: capitalize;
                     color: abstracts.$dark-desaturated-cyan-graphic-design-text;
                     text-decoration: none;
-                    
                 }
                 // link color on hover
                 &:hover {
