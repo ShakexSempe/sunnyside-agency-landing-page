@@ -172,7 +172,7 @@
             p {
                 font-family: abstracts.$font-barlow;
                 font-size: 1em;
-                font-size: clamp(.85rem, 1vw, 1em);
+                font-size: clamp(1rem, 1vw, 1em);
                 font-weight: 600;
                 line-height: 1.6;
             }

@@ -1,0 +1,18 @@
+@use './abstracts';
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include abstracts.md {
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+}

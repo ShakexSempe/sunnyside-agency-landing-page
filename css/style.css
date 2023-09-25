@@ -160,7 +160,7 @@
 #about .about-gallery .work .work-info p {
   font-family: "Barlow", sans-serif;
   font-size: 1em;
-  font-size: clamp(.85rem, 1vw, 1em);
+  font-size: clamp(1rem, 1vw, 1em);
   font-weight: 600;
   line-height: 1.6;
 }
@@ -248,7 +248,7 @@ p {
   }
 }
 .container #contact .footer-logo {
-  margin: 3em auto 2em;
+  padding: 2rem 0;
 }
 .container #contact .footer-logo a {
   display: inline-block;
@@ -316,6 +316,21 @@ p {
 }
 .container #contact .links i:hover::after {
   opacity: 1;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.gallery img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .header {
