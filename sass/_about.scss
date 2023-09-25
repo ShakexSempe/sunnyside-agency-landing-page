@@ -115,7 +115,7 @@
 
         .work {
             flex-basis: 50%;
-            height: 85vh;
+            height: 90vh;
             position: relative;
             @include abstracts.md {
                 height: 100%;
@@ -159,8 +159,8 @@
             h2 {
                 text-transform: capitalize;
                 font-family: abstracts.$font-fraunces;
-                font-size: 2em;
-                // font-size: clamp(1.5em, 1.5vw, 2em);
+                font-size: 1.5em;
+                font-size: clamp(1.5em, 1.5vw, 2em);
                 margin-bottom: 1em;
                 font-weight: 900;
                 @include abstracts.md {
