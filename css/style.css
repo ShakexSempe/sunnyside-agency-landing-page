@@ -132,12 +132,11 @@
 }
 #about .about-gallery .work .work-info {
   position: absolute;
-  bottom: 1em;
+  bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
   text-align: center;
-  width: 50%;
   width: 100%;
   padding: 1em 1.25em;
 }
@@ -157,7 +156,7 @@
   font-family: "Barlow", sans-serif;
   font-size: 1em;
   font-size: clamp(.85rem, 1vw, 1em);
-  font-weight: 900;
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   #about .about-gallery .work .work-info {

@@ -147,12 +147,11 @@
 
             .work-info {
                 position: absolute;
-                bottom: 1em;
+                bottom: 2rem;
                 left: 50%;
                 transform: translateX(-50%);
                 width: 100%;
                 text-align: center;
-                width: 50%;
                 width: 100%;
                 padding: 1em 1.25em;
                 @include abstracts.md {
@@ -170,7 +169,7 @@
                 font-family: abstracts.$font-barlow;
                 font-size: 1em;
                 font-size: clamp(.85rem, 1vw, 1em);
-                font-weight: 900;
+                font-weight: 600;
             }
         }
         }
