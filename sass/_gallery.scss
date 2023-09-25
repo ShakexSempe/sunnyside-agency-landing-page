@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    @include abstracts.md {
+    @include abstracts.sm {
         grid-template-columns: repeat(4, 1fr);
         
     }
