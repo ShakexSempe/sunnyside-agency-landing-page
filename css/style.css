@@ -194,6 +194,10 @@ img {
   max-width: 100%;
 }
 
+p {
+  line-height: 1.6;
+}
+
 .container {
   width: 100%;
   position: relative;
@@ -533,9 +537,10 @@ img {
   object-fit: cover;
 }
 #projects .grid-container .grid-item .review {
-  font-size: 1em;
+  font-size: 1rem;
   color: #5a636c;
-  font-weight: 600;
+  font-weight: 400;
+  line-height: 1.6;
 }
 #projects .grid-container .grid-item .name {
   font-family: "Fraunces", serif;
