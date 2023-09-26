@@ -303,10 +303,18 @@ p {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-.gallery img {
+.gallery figure {
+  overflow: hidden;
+}
+.gallery figure img {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  transition: 0.25s ease-in;
+}
+.gallery figure:hover img {
+  transform: scale(1.1);
+  transition: 0.25s ease-out;
 }
 
 .header {

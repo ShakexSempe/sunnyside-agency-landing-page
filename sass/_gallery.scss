@@ -9,10 +9,21 @@
         
     }
 
-    img {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
+    figure {
+        overflow: hidden;
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            transition: .25s ease-in;
+        }
+
+        &:hover {   
+            img {
+                transform: scale(1.1);
+                transition: .25s ease-out;
+            }
+        }
     }
 
 }
