@@ -216,81 +216,65 @@ p {
 .container.overlay::after {
   left: 0;
 }
-.container #contact {
+.container #footer {
   width: 100%;
-  padding-bottom: 0.5em;
+  padding: 10vh 5vw;
   text-align: center;
-  background-color: rgba(69, 140, 126, 0.575);
+  background-color: #9ccec4;
   color: #25564b;
 }
-.container #contact .footer-logo {
-  padding: 10vh 0 1rem;
-}
-.container #contact .footer-logo a {
-  display: inline-block;
-}
-.container #contact .footer-logo a svg {
+.container #footer .footer-logo a svg {
   fill: #25564b;
 }
-.container #contact ul {
+.container #footer ul {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  margin: 0.5em auto;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
 }
-@media (min-width: 1000px) {
-  .container #contact ul {
-    width: 25%;
-    justify-content: space-between;
-  }
-}
-.container #contact ul li {
-  padding: 0.3em 1em;
+.container #footer ul li {
   list-style: none;
   font-weight: 500;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 3px;
 }
-.container #contact ul li a {
+.container #footer ul li a {
   text-transform: capitalize;
   color: #25564b;
   text-decoration: none;
+  cursor: default;
+  transition: 0.25s;
 }
-.container #contact ul li:hover {
-  transform: scale(1.1);
+@media (min-width: 820px) {
+  .container #footer ul li a {
+    cursor: pointer;
+  }
 }
-.container #contact ul li:hover a {
+.container #footer ul li a:hover {
   color: white;
 }
-.container #contact .links {
+.container #footer .links {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   margin: 2em auto;
-  padding: 1em;
-  cursor: pointer;
-  width: 70%;
 }
 @media (min-width: 768px) {
-  .container #contact .links {
-    width: 20%;
+  .container #footer .links {
+    cursor: pointer;
+    gap: 2rem;
   }
 }
-.container #contact .links i {
-  padding: 0.5em;
-  transition: 0.3s;
-  margin: 0 auto;
-  border: none;
-  outline: none;
+.container #footer .links i {
+  transition: 0.25s;
   color: #25564b;
   position: relative;
 }
-.container #contact .links i:hover {
+.container #footer .links i:hover {
   color: white;
   transform: scale(1.2);
 }
-.container #contact .links i:hover::after {
+.container #footer .links i:hover::after {
   opacity: 1;
 }
 

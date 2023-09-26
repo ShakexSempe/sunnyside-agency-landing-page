@@ -62,99 +62,94 @@ p {
 
 // end of testimonials
 // contact / footer
-    #contact {
+    #footer {
         width: 100%;
-        padding-bottom: .5em;
+        padding: 10vh 5vw;
         text-align: center;
         background-color: abstracts.$dark-moderate-cyan-footer;
         color: abstracts.$dark-desaturated-cyan-graphic-design-text;
         
-        // social links
+        // FOOTER LOGO
         .footer-logo {
-            // margin: 3em auto 2em;
-            // logo box shadow
-            padding: 10vh 0 1rem;
             a {
-                display: inline-block;
-                // border: 1px solid red;
-
                 svg {
                     fill: abstracts.$dark-desaturated-cyan-graphic-design-text;
                 }
             }
-            // end of logo box shadow
         }
-        // footer navigation links
+
+        // FOOTER PAGE LINKS
         ul {
             display: flex;
-            justify-content: space-around;
             align-items: center;
-            margin: .5em auto;
-            @media (min-width: 1000px){
-                width: 25%;
-                justify-content: space-between;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
 
+            @media (min-width: 820px){
+                // width: 25%;
+                // justify-content: space-between;
             }
 
             li {
-                padding: .3em 1em ;
                 list-style: none;
                 font-weight: 500;
-                cursor: pointer;
-                transition: .3s;
-                border-radius: 3px;
+
                 a {
                     text-transform: capitalize;
                     color: abstracts.$dark-desaturated-cyan-graphic-design-text;
                     text-decoration: none;
+                    cursor: default;
+                    transition: .25s;
+
+                    // DESKTOP LINK CURSOR
+                    @media (min-width: 820px) {
+                        cursor: pointer;
+                    }
+
+                    &:hover {
+                        color: abstracts.$white;
+                    }
+
                 }
                 // link color on hover
-                &:hover {
-                    transform: scale(1.1);
-                    a {
-                        color: abstracts.$white;
-                    } 
-                }
                 // end of link color on hover
 
             }
         }
-        // end of footer navigation links
 
-        // social media links
+        // SOCIAL MEDIA ICONS
         .links {
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 1rem;
             margin: 2em auto;
-            padding: 1em;
-            cursor: pointer;
-            width: 70%;
-            @media (min-width: 768px) {
-                width: 20%;
-            }
-                i {
-                    padding: .5em;
-                    transition: .3s;
-                    margin: 0 auto;
-                    border: none;
-                    outline: none;
-                    color: abstracts.$dark-desaturated-cyan-graphic-design-text;
-                    position: relative;
-                    // social media cons box shadow
 
-                    &:hover {
-                            color: abstracts.$white;
-                            transform: scale(1.2);
-                            &::after { opacity: 1;}
+            // DESKTOP STYLE
+            @media (min-width: 768px) {
+                cursor: pointer;
+                gap: 2rem;
+            }
+
+            i {
+                transition: .25s;
+                color: abstracts.$dark-desaturated-cyan-graphic-design-text;
+                position: relative;
+
+                &:hover {
+                    color: abstracts.$white;
+                    transform: scale(1.2);
+
+                    &::after {
+                        opacity: 1;
                     }
                 }
             }
-        
-        // end of social media links
+
+        }
 
     }
-// end of contact / footer
 }
 
 
