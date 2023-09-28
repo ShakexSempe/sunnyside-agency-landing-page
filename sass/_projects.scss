@@ -11,8 +11,9 @@
     .grid-title {
         text-align: center;
         color: abstracts.$dark-grayish-blue;
+        font-family: abstracts.$font-title;
         letter-spacing: .25em;
-        font-weight: 900;
+        font-weight: 700;
         text-transform: uppercase;
         padding-top: 2em;
         margin: 1em auto .5em;
@@ -35,12 +36,12 @@
             place-items: center;
             gap: 2rem;
             @include abstracts.md {
-                gap: 4rem;
+                gap: 3rem;
             }
 
             figure {
-                height: 5em;
-                width: 5em;
+                height: 4em;
+                width: 4em;
                 border-radius: 50%;
                 border: none;
                 overflow: hidden;
@@ -58,10 +59,11 @@
             }
 
             .name {
-                font-family: abstracts.$font-fraunces;
                 h3 {
+                    font-family: abstracts.$font-fraunces;
                     font-weight: 900;
                     margin-bottom: .5em;
+                    font-size: 1rem;
                 }
                 p {
                     font-family: abstracts.$font-barlow;

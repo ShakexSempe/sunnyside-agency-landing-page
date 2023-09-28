@@ -188,11 +188,12 @@ body {
 }
 body .attribution {
   text-align: center;
-  padding: 1em 0;
+  padding: 5vh 5vw;
 }
 body .attribution a {
   color: #3e52a3;
   line-height: 1.6;
+  text-decoration: none;
 }
 
 img {
@@ -505,8 +506,9 @@ p {
 #projects .grid-title {
   text-align: center;
   color: #818498;
+  font-family: "Fraunces", serif;
   letter-spacing: 0.25em;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   padding-top: 2em;
   margin: 1em auto 0.5em;
@@ -532,12 +534,12 @@ p {
 }
 @media (min-width: 768px) {
   #projects .grid-container .grid-item {
-    gap: 4rem;
+    gap: 3rem;
   }
 }
 #projects .grid-container .grid-item figure {
-  height: 5em;
-  width: 5em;
+  height: 4em;
+  width: 4em;
   border-radius: 50%;
   border: none;
   overflow: hidden;
@@ -551,12 +553,11 @@ p {
   font-weight: 400;
   line-height: 1.6;
 }
-#projects .grid-container .grid-item .name {
-  font-family: "Fraunces", serif;
-}
 #projects .grid-container .grid-item .name h3 {
+  font-family: "Fraunces", serif;
   font-weight: 900;
   margin-bottom: 0.5em;
+  font-size: 1rem;
 }
 #projects .grid-container .grid-item .name p {
   font-family: "Barlow", sans-serif;
