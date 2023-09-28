@@ -478,7 +478,10 @@ p {
   0%, 100% {
     transform: translateY(0);
   }
-  50% {
+  25%, 50% {
+    transform: translateY(0.5rem);
+  }
+  30% {
     transform: translateY(0.25rem);
   }
 }
