@@ -49,7 +49,6 @@
   font-family: "Barlow", sans-serif;
 }
 #about .about-info .about-brand .card .card-details button {
-  margin: 0 auto 2em;
   font-size: 1rem;
   border: none;
   background-color: transparent;
@@ -83,6 +82,14 @@
 }
 #about .about-info .about-brand .card .card-details button:hover::after {
   opacity: 1;
+}
+#about .about-info .about-brand .card .card-details button:active::after {
+  transform: scaleX(0.4);
+}
+@keyframes button-line {
+  50% {
+    transform: scaleX(0.4);
+  }
 }
 #about .about-info .about-brand .about-img {
   overflow: hidden;

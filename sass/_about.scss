@@ -53,7 +53,6 @@
                     }
 
                     button {
-                        margin: 0 auto 2em;
                         font-size: 1rem;
                         border: none;
                         background-color: transparent;
@@ -84,10 +83,24 @@
                         &.card-button {
                             &::after {background-color: abstracts.$soft-red}
                         }
+
+                        // HOVER CLASS - OPACITY = 1
                         &:hover {
                             &::after {opacity: 1;}
                         }
 
+                        // ACTIVE CLASS = ::AFTER SCALE-X ON CLICK
+                        &:active {
+                            &::after {
+                                transform: scaleX(.4);
+                            }
+                        }
+                        // BUTTON ANIMATION
+                        @keyframes button-line {
+                            50% {
+                                transform: scaleX(.4);
+                            }
+                        }
                     }
                 }
             }
