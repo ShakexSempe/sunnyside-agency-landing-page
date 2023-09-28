@@ -46,10 +46,16 @@
                 cursor: pointer;
             }
         }
-        &:active {
+
+        &:hover {
+            a {
+                animation: none;
+            }
+        }
+        &:active  {
             transform: translateY(1rem);
             opacity: .5;
-            animation: none;
+            // animation: none;
         }
 
         @keyframes hero-arrow {
